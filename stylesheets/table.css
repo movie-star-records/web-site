@@ -1,0 +1,32 @@
+/* CSS Document */
+
+.table_data {
+  display: table;
+  width: 90%;
+  margin: 0% 5% 0% 5%;
+}
+
+.table_row {
+  display: table-row;
+}
+
+.table_col {
+  display: table-cell;
+  padding: 0.5em;
+  border: 1px solid #FFF;
+  text-align: left;
+}
+
+.table_col.title {
+  background-color: #CCC;
+  width: 25%;
+/*  white-space: nowrap;*/
+}
+
+.table_col.value {
+  background-color: #EEE;
+}
+
+.table_col.value ol {
+  margin: 0.5em 3em;
+}

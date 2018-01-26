@@ -1,0 +1,1016 @@
+/* The overall elements style */
+body {
+  background-image: url(/images/background.png);
+  background-repeat: repeat;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+header.page {
+  margin-bottom: 10px;
+  padding-top: 1px;
+  margin-top: 1px;
+}
+
+.quote {
+  font-size: 100%;
+  font-style: italic;
+  line-height: normal;
+  padding-left: 20px;
+}
+
+.clear {
+  clear: both;
+}
+
+.centering {
+  clear: both;
+  text-align: center;
+}
+
+.imgheader_box {
+  clear: none;
+  float: none;
+  margin: 5px auto;
+  padding-top: 10px;
+  height: 67px;
+  width: 740px;
+  display: block;
+}
+
+.image_logo {
+  float: left;
+  background-image: url(/images/header_logo.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  height: 67px;
+  width: 60px;
+  margin-left: 10px;
+  display: block;
+}
+
+.header_menu_box {
+  float: right;
+  height: 25px;
+  margin-top: 45px;
+  display: block;
+}
+
+.header_box {
+  clear: both;
+  margin: 0px auto;
+  width: 100%;
+  height: auto;
+  background-image: url(/images/header_box.gif);
+  background-repeat: round;
+  background-position: center;
+  background-size: contain;
+  display: block;
+}
+
+.last_modified_spacer {
+  width: auto;
+  height: 55px;
+}
+
+.last_modified {
+  color: #CCC;
+  margin: 0px;
+  padding: 0px;
+  width: 98%;
+  font-family: "lithos-pro";
+  font-weight: 300;
+  color: #FFF;
+  font-size: 93%;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.copyright {
+  font-family: "lithos-pro";
+  font-weight: 300;
+  text-align: center;
+  font-size: 93%;
+}
+
+.text_shadow {
+  text-shadow: 2px 2px 2px #CCC;
+}
+
+.news_date {
+  background-image: url(/images/news_date.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-origin: content-box;
+}
+
+.news_date .date {
+  position: relative;
+  top: 2px;
+  left: 24px;
+}
+
+.latest_update {
+  margin-left: 15px;
+  margin-bottom: 10px;
+  vertical-align: top;
+}
+
+.latest_update li {
+  list-style-image: url(/images/latest_update_date.png);
+  list-style-position: outside;
+  text-height: 2em;
+}
+
+.top3 li:nth-child(n+4) {
+  display: none;
+}
+
+.top2 article:nth-child(n+3) {
+  display: none;
+}
+
+.latest_update .update_date {
+  display: inline-block;
+  text-align: left;
+  position: relative;
+  top: -1px;
+}
+
+.latest_update .update_description {
+  display: inline-block;
+  text-align: left;
+}
+
+.show_list {
+  margin-left: 40px;
+  vertical-align: top;
+}
+
+.show_list li {
+  list-style-image: url(/images/latest_update_date.png);
+  list-style-position: outside;
+  line-height: 184.6%;
+}
+
+.show_list .event_title {
+  font-weight: 700;
+}
+
+.show_list .event_cast {
+  padding-left: 1em;
+  font-size: 93%;
+}
+
+.article_list li {
+  line-height: 184.6%;
+  margin-bottom: 10px;
+}
+
+.article_list li.mark_none {
+  list-style-position: none;
+  vertical-align: bottom;
+}
+
+.article_list li.mark_star {
+  list-style-image: url(/images/links_mark.png);
+  list-style-position: outside;
+  position: relative;
+  top: -2px;
+  left: 24px;
+}
+
+.article_list li img{
+  text-align: left;
+  vertical-align: top;
+}
+
+.article_list a,
+.article_list a:visited {
+  line-height: inherit;
+  color: #06F;
+  text-decoration: none;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px #CCC;
+}
+
+.article_list a:hover,
+.article_list a:focus {
+  color: #F00;
+  position: relative;
+/*
+  top: 1px;
+  left: 1px;
+*/
+}
+
+.article_list li:last-child {
+  margin-bottom: 30px;
+}
+
+.layoutImages {
+  position: 0px auto;
+  width: 100%;
+  display: block;
+  padding: 1% 0px;
+  margin: 1% 0px;
+}
+
+.profile {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.profile .image {
+  display: inline-block;
+  float: left;
+  width: 30%;
+}
+
+.profile .descriptiion {
+  display: inline-block;
+  float: left;
+  margin-left: 10px;
+}
+
+.policy {
+  margin: 2em auto;
+  font-size: 75%;
+  color: #333;
+}
+
+.policy a,
+.policy a:visited {
+  color: #333;
+}
+
+.policy a:hover,
+.policy a:focus {
+  color: #C00;
+}
+
+#list_mail_image {
+  padding: 0px;
+  margin: 0px 5px 0px 0px;
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+  border: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  -o-box-shadow: none;
+  -ms-box-shadow: none;
+  box-shadow: none;
+  behavior: url(/includes/PIE.htc);
+}
+
+#sales_policy {
+  font-family: "メイリオ", Meiryo, "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+.system-error-message ul {
+  list-style-position: inside;
+  list-style-type: disc;
+  position: relative;
+  left: 2em;
+}
+
+.signature {
+  text-align: right;
+}
+
+.discography ul {
+  list-style-position: outside;
+  list-style-type: circle;
+  padding-left: 1.5em;
+  font-size: 93%;
+  margin-bottom: 10px;
+}
+
+.discography a,
+.discography a:visited {
+  line-height: inherit;
+  color: #06F;
+  text-decoration: none;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px #CCC;
+}
+
+.discography a:hover,
+.discography a:focus {
+  color: #F00;
+  position: relative;
+/*
+  top: 1px;
+  left: 1px;
+*/
+}
+
+article .disc_title {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  width: 90%;
+  text-align: left;
+  border-bottom: 1px solid #009;
+}
+
+article .disc_title h2 {
+  display: inline;
+}
+
+article .disc_title .catalog_no {
+  font-size: 80%;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+article .disc_catalogue {
+  font-size: 93%;
+}
+
+article .disc_catalogue h3 {
+  font-size: 93%;
+}
+
+article .shop_list {
+  font-size: 93%;
+}
+
+article a,
+article a:visited {
+  color: #06F;
+  text-decoration: none;
+  text-shadow: 1px 1px 2px #CCC;
+}
+
+article .video {
+    position: relative;
+    height: 0;
+	padding: 30px 0 56.25%;
+	align: center;
+	overflow: hidden;
+}
+article .video iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+article a:hover,
+article a:focus {
+  color: #F00;
+  position: relative;
+/*
+  top: 1px;
+  left: 1px;
+*/
+}
+
+.event_info {
+  margin: 1em 1em 2em 1em;
+  padding: 1em;
+  border: 1px solid #999999;
+}
+
+.pagetop {
+  display: inline-block;
+  float: right;
+  font-size: 77%;
+  text-align: right;
+}
+
+.pagetop a,
+.pagetop a:visited {
+  color: #06F;
+  text-decoration: none;
+  text-shadow: 1px 1px 2px #CCC;
+}
+
+.pagetop a:hover,
+.pagetop a:focus {
+  color: #F00;
+  position: relative;
+/*
+  top: 1px;
+  left: 1px;
+*/
+}
+
+article .disc_comment {
+  text-align: left;
+}
+
+article {
+  border-bottom: 1px solid #CCC;
+  margin-bottom: 50px;
+}
+
+article .caution {
+  font-size: 88%;
+}
+
+article .caution ul {
+  margin-left: 1em;
+  list-style-type: disc;
+  list-style-position: outside;
+}
+
+article .caution .important {
+  font-weight: bold;
+  color: #F00;
+}
+
+article:last-of-type {
+  border-bottom: none;
+}
+
+article .pronounce {
+  margin-left: 1em;
+  font-size: 50%;
+}
+
+.policy-date {
+  text-align: right;
+}
+
+.border_solid {
+  border-bottom: 1px solid #CCC;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.article_disc {
+  margin-top: 20px;
+}
+
+.show_list {
+  vertical-align: top;
+}
+
+.system-error-message ul{
+  list-style-position: inside;
+  list-style-type: disc;
+}
+
+label.error {
+  color: red;
+  font-weight: normal;
+  width: auto;
+}
+
+/* ----------------------- SLATS ----------------------- */
+
+ol.slats {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+ol.slats li {
+  margin: 0 0 10px 0;
+  padding: 0 0 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+ol.slats li:last-child {
+  margin: 0;
+  padding: 0;
+  border-bottom: none;
+}
+
+ol.slats li h3 {
+  font-size: 123.1%;
+  line-height: normal;
+  font-weight: bold;
+  margin: 0px;
+}
+
+ol.slats li p {
+  margin: 0px;
+}
+
+ol.slats li p span.meta {
+  display: block;
+  font-size: 93%;
+  color: #666;
+}
+
+/* ----------------------- FORM ----------------------- */
+
+form fieldset {
+  margin: 0 0 10px 0;
+  padding: 0 0 10px 0;
+  font-size: 100%;
+  border-bottom: 1px solid #ddd;
+}
+
+form fieldset.form-actions {
+  margin: 0 0 0 15%;
+  padding: 0;
+  border: none;
+}
+
+form fieldset.check {
+  padding-left: 15%;	
+}
+
+form fieldset label {
+  float: left;
+  width: 15%;
+  margin: 4px 0 5px 0;
+  font-weight: bold;
+}
+
+form fieldset .product_name {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  width: 100%;
+  margin: 1em auto;
+  height: 1em;
+  vertical-align: middle;
+}
+
+form fieldset .price {
+  display: block;
+  text-align: center;
+  margin: 1em auto;
+  height: 1em;
+  vertical-align: middle;
+}
+
+form fieldset .product_discription {
+  display: block;
+  text-align: center;
+  height: 10em;
+  margin: 1em auto;
+}
+
+form fieldset .product_discription .important {
+  font-weight: bold;
+  color: #F00;
+}
+
+form fieldset .product_discription .important a,
+form fieldset .product_discription .important a:visited {
+  font-weight: inherit;
+  color: #06F;
+}
+
+form fieldset .product_discription .important a:hover,
+form fieldset .product_discription .important a:focus {
+  font-weight: inherit;
+  color: #F00;
+}
+
+form fieldset.check label {
+  display: inline;
+  float: none;
+  width: auto;
+  font-weight: normal;
+}
+
+form fieldset.radio ul li label {
+  display: inline;
+  float: none;
+  width: auto;
+  font-weight: normal;
+}
+
+form fieldset input.form-text,
+form fieldset textarea {
+  display: block;
+  width: 80%;
+  padding: 5px;
+  font-size: 100%;
+  border: 1px solid #ddd;
+  background: #f5f5f5;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.05);
+  -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,.05);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.05);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+form fieldset input.form-text:focus,
+form fieldset input.order_amount:focus {
+  border: 1px solid #ccc;
+  background: #fff;
+}
+
+form fieldset.product_select {
+  display: block;
+  float: left;
+  width: 50%;
+}
+  @media only screen and (max-width: 767px) {
+    form fieldset.product_select {
+      width: 100%;
+    }
+  }
+
+form fieldset .product_image {
+  display: block;
+  margin: 5px auto;
+  text-align: center;
+  width: 70%;
+  -moz-box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+  -webkit-box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+  -o-box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+  -ms-box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+  behavior: url(/includes/PIE.htc);
+}
+
+form fieldset textarea {
+  height: 150px;
+}
+
+form fieldset .form-text {
+  padding-left: 15%;	
+}
+
+form fieldset .order_amount {
+  display: inline;
+  margin: 0% 1% 0% 40%;
+  width: 20%;
+  border: 1px solid #ddd;
+  background: #f5f5f5;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.05);
+  -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,.05);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.05);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+form fieldset.radio ul {
+  margin: 5px 0 0 12%;
+}
+
+form fieldset.radio ul li {
+  margin: 0 0 5px 0;
+}
+
+form fieldset.radio ul li:last-child {
+  margin: 0;
+}
+
+form fieldset p.form-help {
+  margin: 5px 0 0 12%;
+  font-size: 93%;
+  color: #999;
+}
+
+form input[type="submit"] {
+  margin: 0;
+  padding: 5px 10px;
+  font-size: 93%;	
+  font-weight: bold;
+  border: 1px solid #ccc;
+  background: #eee;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+form input[type="submit"]:hover,
+form input[type="submit"]:focus {
+  border: 1px solid #bbb;
+  background: #e5e5e5;
+}
+
+form input[type="submit"]:active {
+  border: 1px solid #ccc;
+  background: #eee;
+}
+
+  @media screen and (max-width: 600px) {
+    form fieldset label {
+      display: block;
+      float: none;
+      width: auto;
+      margin: 0 0 5px 0;
+    }
+
+    form fieldset.form-actions,
+    form fieldset.check,
+    form fieldset.radio ul,
+    form fieldset p.form-help {
+      margin-left: 0;
+      padding-left: 0;
+    }
+
+    form fieldset input.form-text,
+    form fieldset textarea {
+      width: 100%;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+  }
+
+/* ----------------------- HEADER CSS ------------------------------ */
+
+header ul {
+  margin-bottom: 0px;
+  text-align: right;
+}
+
+header a:link,
+header a:visited {
+  color: #000;
+}
+
+header a:focus,
+header a:hover {
+  color: #F00;
+  text-decoration: none;
+  position: relative;
+/*
+  top: 1px;
+  left: 1px;
+*/
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0 8px 0 0;
+  font-weight: bold;
+  font-size: 108%;
+  border-right: none;
+}
+
+.menu
+{
+  float: right;
+}
+
+.menu ul {
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  list-style: none;
+}
+
+.menu ul li {
+  float: left;
+  margin-bottom: 0;
+  position: relative;
+  z-index: 10;
+}
+
+.menu ul li a {
+  display: block;
+  padding: 6px 10px 4px;
+  margin: 13px 5px;
+  font-size: 108%;
+  font-weight:bold;
+  text-decoration: none;
+  color: #BFBFBF;
+}
+
+.menu ul li a:hover {
+  color: #fff;
+}
+
+.menu ul > li.selected a {
+  background-color: white;
+  color: black;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.menu.dropdown > ul > li > a {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.menu.dropdown ul li ul {
+  display: none;
+  position: absolute;
+  right:-10px;
+  width: 320px;
+  background: rgba(5,5,5,1);
+
+  -moz-border-radius-topleft: 0px;
+  -moz-border-radius-topright: 0px;
+  -moz-border-radius-bottomright: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-radius: 0px 0px 4px 4px;
+  border-radius: 0px 0px 4px 4px;
+
+  -webkit-box-shadow:  0px 3px 4px 2px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow:  0px 3px 4px 2px rgba(0, 0, 0, 0.4);
+  box-shadow:  0px 3px 4px 2px rgba(0, 0, 0, 0.4);
+}
+
+.menu.dropdown ul li ul li {
+  float: none;
+}
+
+.menu.dropdown {
+  display: none;
+}
+
+/* ----------------------- FOOTER CSS ------------------------------ */
+
+/* Footer copyright text CSS */
+
+footer {
+  padding-top: 15px !important;
+  font-size: 108%;
+  margin-top: 20px !important;
+  border-top: 9px solid #CCC;
+/*	border-width: 9px;*/
+  -moz-border-image: url(/images/border1.png) 9 0 0 0 / 9px 0px 0px 0px stretch;
+  -webkit-border-image: url(/images/border1.png) 9 0 0 0 / 9px 0px 0px 0px stretch;
+  -o-border-image: url(/images/border1.png) 9 0 0 0 / 9px 0px 0px 0px stretch;
+  border-image: url(/images/border1.png) 9 0 0 0 / 9px 0px 0px 0px stretch;
+  behavior: url(/includes/PIE.htc);
+}
+
+footer ul {
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+footer a:link,
+footer a:visited {
+  color: #000;
+  text-shadow: 2px 2px 2px #CCC;
+}
+
+footer a:hover {
+  color: #F00;
+  text-decoration: none;
+  position: relative;
+/*
+  top: 1px;
+  left: 1px;
+*/
+}
+
+footer nav ul li {
+  display: inline;
+  margin: 0 10px 0 0;
+  padding: 0 10px 0 0;
+  font-weight: bold;
+  border-right: 1px solid #ddd;
+}
+
+footer nav ul li:last-child {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+footer p {
+  margin: 10px 0;
+  font-family: "lithos-pro";
+  text-align: center;
+  color: #000;
+}							
+
+/* #Media Queries
+================================================== */
+
+  /* Smaller than standard 960 (devices and browsers) */
+  @media only screen and (max-width: 959px) {}
+
+  /* Tablet Portrait size to standard 960 (devices and browsers) */
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
+    .imgheader_box {
+      width: 740px;
+      margin-top: 1px;
+      margin-bottom: 1px;
+    }
+	  
+  }
+
+  /* All Mobile Sizes (devices and browser) */
+  @media only screen and (max-width: 767px) {
+    .imgheader_box {
+      height: 35px;
+      width: 98%;
+      margin-top: 1px;
+      margin-bottom: 1px;
+    }
+
+    .image_logo {
+      position: relative;
+      top: 5px;
+      margin-left: 3px;
+      height: 30px;
+      width: 30px;
+    }
+
+    .header_menu {
+      text-align: left;
+      font-family: "lithos-pro";
+      color: #000;
+      position: relative;
+      top: 0px;
+    }
+
+    .header_menu_box {
+      margin-top: 0px;
+      height: 30px;
+      padding-top: 10px;
+    }
+
+    footer {
+      font-size: 93%;
+    }
+
+    .copyright {
+      font-size: 77%;
+    }
+
+    #slider {
+      max-width: 748px;
+      max-height: 100%;
+    }
+
+    .menu.full {
+      display: none;
+    }
+
+    .menu.dropdown {
+      display: block;
+    }
+	  
+  }
+
+  /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    .header_menu_box {
+      width: 90%;
+    }
+
+    .header_box2 {
+      box-sizing: border-box;
+      max-width: 420px;
+      max-height: 55px;
+    }
+
+    .last_modified_spacer {
+      height: 28px;
+    }
+
+    .last_modified {
+      font-size: 77%;
+    }
+
+    .menu.dropdown ul li ul {
+      right: -10px;
+      width: 440px;
+    }
+	  
+  }
+
+  /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+  @media only screen and (max-width: 479px) {
+    .header_menu_box {
+      width: 87%;
+    }
+  
+    .header_box2 {
+      box-sizing: border-box;
+      max-width: 300px;
+      max-height: 50px;
+    }
+  
+    .last_modified_spacer {
+      height: 25px;
+    }
+
+    .last_modified {
+      font-size: 77%;
+    }
+
+	 header nav ul li {
+      font-size: 93%;
+    }
+	  
+	#slider{
+      display: none;
+    }
+  }

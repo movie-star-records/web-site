@@ -1,0 +1,12 @@
+/* CSS Document */
+#imgPreviewWithStyles2 {
+  background-color: #333;
+	padding: 15px;
+	z-index: 999;
+}
+#imgPreviewWithStyles2 span {
+	color: #EEE;
+	text-align: center;
+	display: block;
+	padding: 10px 0 3px 0;
+}

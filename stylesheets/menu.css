@@ -1,0 +1,89 @@
+#txtmenu_box {
+  display: none;
+  height: 30px;
+  padding-top: 3px;
+  line-height: 1em;
+}
+
+#imgmenu_box {
+  display: inline-block;
+}
+
+.menu_link,.policy,.copyright{  
+/*
+  -moz-transition-duration:0.3s;
+  -webkit-transition-duration:0.3s;
+  -o-transition-duration:0.3s;
+  -ms-transition-duration:0.3s;
+*/
+}
+
+.imgmenu{
+  background:url("/images/menu.png") top left no-repeat;
+  margin-right: 5px;
+  float: left;
+  -moz-transition-duration:0.3s;
+  -webkit-transition-duration:0.3s;
+  -o-transition-duration:0.3s;
+  -ms-transition-duration:0.3s;
+}
+
+.imgmenu_dummy{
+  display: none;
+}
+
+.imgmenu_dummy, .imgmenu:hover{
+  background:url("/images/menu_over.gif") top left no-repeat;
+}
+
+.m_shop,.m_shop:hover{
+  width:62px;
+  height:22px;
+  background-position:-1px -1px;
+}
+
+.m_contact,.m_contact:hover{
+  width:100px;
+  height:22px;
+  background-position:-1px -24px;
+}
+
+.m_home,.m_home:hover{
+  width:68px;
+  height:22px;
+  background-position:-64px -1px;
+}
+
+.m_about,.m_about:hover{
+  width:79px;
+  height:22px;
+  background-position:-1px -47px;
+}
+
+.m_shows,.m_shows:hover{
+  width:77px;
+  height:22px;
+  background-position:-1px -70px;
+}
+
+.m_discography,.m_discography:hover{
+  width:151px;
+  height:22px;
+  background-position:-1px -93px;
+}
+
+.m_artists,.m_artists:hover{
+  width:87px;
+  height:22px;
+  background-position:-1px -116px;
+}
+  /* All Mobile Sizes (devices and browser) */
+  @media only screen and (max-width: 767px) {
+    #txtmenu_box {
+      display: inline;
+    }
+
+    #imgmenu_box {
+      display: none;
+    }
+  }
