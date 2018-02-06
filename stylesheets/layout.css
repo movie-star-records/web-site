@@ -135,11 +135,23 @@ header.page {
 .top2 li:nth-child(n+3) {
   display: none;
 }
+.top3ex li:nth-child(-n+3) {
+  display: none;
+}
+.top2ex li:nth-child(-n+2) {
+  display: none;
+}
 
 .top3 article:nth-child(n+4) {
   display: none;
 }
 .top2 article:nth-child(n+3) {
+  display: none;
+}
+.top3ex article:nth-child(-n+3) {
+  display: none;
+}
+.top2ex article:nth-child(-n+2) {
   display: none;
 }
 
