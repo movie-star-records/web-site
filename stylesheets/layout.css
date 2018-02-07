@@ -135,10 +135,10 @@ header.page {
 .top2 li:nth-child(n+3) {
   display: none;
 }
-.top3ex li:nth-child(-n+3) {
+.after3 li:nth-child(-n+3) {
   display: none;
 }
-.top2ex li:nth-child(-n+2) {
+.after2 li:nth-child(-n+2) {
   display: none;
 }
 
@@ -148,10 +148,10 @@ header.page {
 .top2 article:nth-child(n+3) {
   display: none;
 }
-.top3ex article:nth-child(-n+3) {
+.after3 article:nth-child(-n+3) {
   display: none;
 }
-.top2ex article:nth-child(-n+2) {
+.after2 article:nth-child(-n+2) {
   display: none;
 }
 
