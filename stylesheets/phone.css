@@ -66,7 +66,7 @@ header a.corner-menu {
 	border-bottom: 1px solid #CCC;
 	text-decoration:none;
 	font-weight:bold;
-	background:#222222 url("/images/mobile/drop-down-arrow.png") no-repeat 55px center;
+	background:#222222 url("images/mobile/drop-down-arrow.png") no-repeat 55px center;
 }
 
 header .floating-menu {

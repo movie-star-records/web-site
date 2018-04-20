@@ -5,30 +5,41 @@
 <!-- InstanceEndEditable -->
         <script type="text/javascript" src="//use.typekit.net/txo2gku.js"></script>
         <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-        <link rel="shortcut icon" href="/favicon/favicon.ico" />
-        <link rel="icon" type="image/png" href="/favicon/favicon.png" />
-        <link rel="apple-touch-icon-precomposed" href="/favicon/apple-touch-icon.png" />
-        <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png" />
-        <link href="/stylesheets/base.css" type="text/css" rel="stylesheet" />
-        <link href="/stylesheets/skeleton.css" type="text/css" rel="stylesheet" />
-        <link href="/stylesheets/layout.css" type="text/css" rel="stylesheet" />
-        <link href="/stylesheets/menu.css" type="text/css" rel="stylesheet" />
-        <link href="/stylesheets/pie.css" type="text/css" rel="stylesheet" />
+        <link rel="shortcut icon" href="favicon/favicon.ico" />
+        <link rel="icon" type="image/png" href="favicon/favicon.png" />
+        <link rel="apple-touch-icon-precomposed" href="favicon/apple-touch-icon.png" />
+        <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png" />
+        <link href="./stylesheets/base.css" type="text/css" rel="stylesheet" />
+        <link href="./stylesheets/skeleton.css" type="text/css" rel="stylesheet" />
+        <link href="./stylesheets/layout.css" type="text/css" rel="stylesheet" />
+        <link href="./stylesheets/menu.css" type="text/css" rel="stylesheet" />
+        <link href="./stylesheets/pie.css" type="text/css" rel="stylesheet" />
         <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-        <script type="text/javascript" src="/javascripts/jquery.SmoothScroll.js"></script>
+        <script type="text/javascript" src="javascripts/jquery.SmoothScroll.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-47832865-1', 'movie-star-records.info');
-  ga('send', 'pageview');
-</script>
+	  ga('create', 'UA-47832865-1', 'movie-star-records.info');
+	  ga('send', 'pageview');
+	</script>
+	<script type="text/javascript">
+		$(function(){
+			$("#latestupdate").load("_System/ContentHolders/latest-updates.html");
+			$("#latestnews").load("_System/ContentHolders/latest-news.html");
+			$("#links").load("_System/ContentHolders/links.html");
+			$("#headermenu").load("_System/ContentHolders/menu.html");
+			$("#footermenu").load("_System/ContentHolders/menu.html");
+			$("#pastupdate").load("_System/ContentHolders/past-updates.html");
+			$("#pastnews").load("_System/ContentHolders/past-news.html");
+		})
+	</script>
     </head>
     <body>
         <span id="SmartScroll.marcmoini.com"></span>
@@ -41,37 +52,41 @@
         <div class="image_logo"></div>
         <div class="header_menu_box" id="txtmenu_box">
         <div class="header_menu text_shadow">
-        <nav role="navigation" class="tk-lithos-pro">{module_contentholder,name="Menu"}</nav>
+        <nav role="navigation" class="tk-lithos-pro"><div id="headermenu"></div></nav>
         </div>
         </div>
         <div class="header_menu_box" id="imgmenu_box">
         <div class="imgmenu_dummy"></div>
-        <a href="/">
+        <a href=".">
         <div class="imgmenu m_home"></div>
         </a>
-        <a href="/about.html">
+        <a href="about.html">
         <div class="imgmenu m_about"></div>
         </a>
-        <a href="/artists.html">
+        <a href="artists.html">
         <div class="imgmenu m_artists"></div>
         </a>
-        <a href="/shows.html">
+        <a href="shows.html">
         <div class="imgmenu m_shows"></div>
         </a>
-        <a href="/discography.html">
+        <a href="discography.html">
         <div class="imgmenu m_discography"></div>
         </a>
-        <a href="/shop.html">
+        <a href="shop.html">
         <div class="imgmenu m_shop"></div>
         </a>
-        <a href="/contact.html">
+        <a href="contact.html">
         <div class="imgmenu m_contact"></div>
         </a>
         </div>
         </div>
         <div class="header_box2">
         <div class="last_modified_spacer"></div>
-        <div class="last_modified">Last Modified : {module_lastupdated}</div>
+        <div class="last_modified">Last Modified : 
+			<script type="text/javascript">
+				var str = document.lastModified;
+				document.write(str);
+			</script></div>
         </div>
         </div>
         </div>
@@ -99,7 +114,7 @@
                     <div class="event_date">2018-04-07 (Sat)｜ <a href="http://www.negaposi.net" target="_blank">西院ネガポジ</a></div>
                     <div class="event_title">『the RocknRoll Hi-Fives Japan Tour 2018』京都公演</div>
                     <div class="event_cast">出演 : the RocknRoll Hi-Fives, N-16, FIGHT CLUB, キーマカリーズとチチワシネマ<br clear=all>
-					<a href="/images/news/20180407_1.jpg" target="_blank"><img src="/images/news/20180407_1_light.jpg" align="left" class="news_image" /></a><a href="/images/news/20180407_2.jpg" target="_blank"><img src="/images/news/20180407_2_light.jpg" align="left" class="news_image" /></a><br clear="all"/>
+					<a href="images/news/20180407_1.jpg" target="_blank"><img src="images/news/20180407_1_light.jpg" align="left" class="news_image" /></a><a href="images/news/20180407_2.jpg" target="_blank"><img src="images/news/20180407_2_light.jpg" align="left" class="news_image" /></a><br clear="all"/>
 					</div>
                   </li>
                   <li class="show_list">
@@ -107,13 +122,13 @@
 					<div class="event_title">exteeeeth企画『beginning of the end.』</div>
 					<div class="event_cast">opening act : USGKZ & The equipments<br />
 					出演 : exteeeeth, N-16, バレンタインズ, SK8NIKS, いかめがねすーすー<br clear=all />
-					<a href="/images/news/20180317.jpg" target="_blank"><img src="/images/news/20180317.jpg" align="left" class="news_image" /></a><br clear=all /></div>
+					<a href="images/news/20180317.jpg" target="_blank"><img src="images/news/20180317.jpg" align="left" class="news_image" /></a><br clear=all /></div>
                   </li>
                   <li class="show_list">
                     <div class="event_date">2018-03-03 (Sat)｜ <a href="http://www.lmstudio.net" target="_blank">四ツ橋LMスタジオ</a></div>
                     <div class="event_title">『THE WEMMER と行く RUNRUNRUNS レコ発ツアー』大阪公演</div>
                     <div class="event_cast">出演 : RUNRUNRUNS, THE WEMMER, くつした, N-16, ゆ〜すほすてる, KUNG-FU GIRL<br clear=all/>
-					<a href="/images/news/20180303.jpg" target="_blank"><img src="/images/news/20180303.jpg" align="left" class="news_image" /></a><br clear=all />
+					<a href="images/news/20180303.jpg" target="_blank"><img src="images/news/20180303.jpg" align="left" class="news_image" /></a><br clear=all />
 					</div>
                   </li>
                   <li class="show_list">
@@ -132,41 +147,41 @@
                     ・出展 : perzine blues, CUSMOS<br />
                     ・焼き菓子 : ノザワBAKE<br />
                     ・その他 : 占いの館ありこ（ni-hao!!!!）, マメコ（perzine blues）のハンドマッサージ, アヤコ（N-16）の指ヨガ<br clear="all"/>
-                    <a href="/images/news/20180114.jpg" target="_blank"><img src="/images/news/20180114.jpg" align="left" class="news_image" /></a><br clear="all"/>
+                    <a href="images/news/20180114.jpg" target="_blank"><img src="images/news/20180114.jpg" align="left" class="news_image" /></a><br clear="all"/>
 					</div>
                   </li>
                   <li class="show_list">
                     <div class="event_date">2017-09-16 (Sat)｜ <a href="http://givemelittlemore.blogspot.jp" target="_blank">松本 Give me little more. </a></div>
                     <div class="event_title">『CRAZY RHYTHMS vol.75』</div>
                     <div class="event_cast">出演 : N-16 (Kyoto), サカイヤスアキ (from moools) &amp; コバルト (Tokyo), Her Braids, TANGINGUGUN<br clear="all" />
-                    <a href="/images/news/20170916_01.jpg" target="_blank"><img src="/images/news/20170916_01.jpg" align="left" class="news_image" /></a><br clear="all" />
-                    <a href="/images/news/20170916_02.jpg" target="_blank"><img src="/images/news/20170916_02.jpg" align="left" class="news_image" /></a><br clear="all" />
+                    <a href="images/news/20170916_01.jpg" target="_blank"><img src="images/news/20170916_01.jpg" align="left" class="news_image" /></a><br clear="all" />
+                    <a href="images/news/20170916_02.jpg" target="_blank"><img src="images/news/20170916_02.jpg" align="left" class="news_image" /></a><br clear="all" />
                     </div>
                   </li>
                   <li class="show_list">
                     <div class="event_date">2017-08-12 (Sat)｜ <a href="http://sound-powder.com/index.html" target="_blank">京都 出町柳SOCRATES</a></div>
                     <div class="event_title">LOVE OVER VOLTAGE Presents『DIRECT ACTION DESTROY TRADITION Vol.10』</div>
                     <div class="event_cast">出演 : <a href="https://pinkusaido.bandcamp.com" target="_blank">PINKU SAIDO</a>(from France), 5kai, N-16, screwball, キーマカリーズとチチワシネマ<br clear="all" />
-                    <a href="/images/news/20170812.jpg" target="_blank"><img src="/images/news/20170812.jpg" align="left" class="news_image" /></a><br clear="all" /></div>
+                    <a href="images/news/20170812.jpg" target="_blank"><img src="images/news/20170812.jpg" align="left" class="news_image" /></a><br clear="all" /></div>
                   </li>
                   <li class="show_list">
                     <div class="event_date">2017-07-29 (Sat)｜ <a href="http://banquetunion.com/studio" target="blank">岡山　CRAZY MAMA STUDIO</a></div>
                     <div class="event_title">さんだるズ presents『🌻SUMMER JOURNEY🍉』</div>
                     <div class="event_cast">Live : N-16, メシアと人人（from 京都）, マッシュ星川 feat MIRROR LAKES, cats in a bowl, <a href="https://soundcloud.com/sandals3pgirlsband" target="_blank">さんだるズ</a><br />
                     DJ : kawahara (listen to your radio), waki, あさひちゃん<br clear="all" />
-                    <a href="/images/news/20170729.jpg" target="_blank"><img src="/images/news/20170729.jpg" align="left" class="news_image" /></a><br clear="all" /></div>
+                    <a href="images/news/20170729.jpg" target="_blank"><img src="images/news/20170729.jpg" align="left" class="news_image" /></a><br clear="all" /></div>
                   </li>
                   <li class="show_list">
                     <div class="event_date">2017-07-09 (Sun)｜ <a href="http://www.toos.co.jp/3/" target="blank">下北沢　THREE</a></div>
                     <div class="event_title">『ルックチャップリン』</div>
                     <div class="event_cast">出演 : N-16, number two, postcard of japan, ジャポニカソングサンバンチ, DIEGO<br clear="all" />
-                    <a href="/images/news/20170709.jpg" target="_blank"><img src="/images/news/20170709.jpg" align="left" class="news_image" /></a><br clear="all" /></div>
+                    <a href="images/news/20170709.jpg" target="_blank"><img src="images/news/20170709.jpg" align="left" class="news_image" /></a><br clear="all" /></div>
                   </li>
                   <li class="show_list">
                     <div class="event_date">2017-07-08 (Sat)｜<a href="http://www.barrackblock.com" target="blank">下北沢Barrack Block Care</a></div>
                     <div class="event_title">『Poet Night #1』</div>
                     <div class="event_cast">出演 : Cobalt, サカイヤスアキ & 有泉（from moools）, N-16, Foodie<br clear="all">
-                    <a href="/images/news/20170708.jpg" target="_blank"><img src="/images/news/20170708.jpg" align="left" class="news_image" /></a><br clear="all"></div>
+                    <a href="images/news/20170708.jpg" target="_blank"><img src="images/news/20170708.jpg" align="left" class="news_image" /></a><br clear="all"></div>
                   </li>
                   <li class="show_list">
                     <div class="event_date">2017-02-23 (Thu)｜ <a href="http://www.metro.ne.jp/index.html" target="blank">京都　CLUB METRO</a></div>
@@ -174,34 +189,34 @@
                     <div class="event_cast">出演 : N-16, 徐波(chinese football), she said, fish, quaeru, knit<br />
                     FOOD : 象の背 ぱるさん<br />
                     お土産 : まよなかファンクラブ<br clear="all"/>
-                    <a href="/images/news/20170223.jpg" target="_blank"><img src="/images/news/20170223.jpg" align="left" class="news_image" /></a><br clear="all"></div>
+                    <a href="images/news/20170223.jpg" target="_blank"><img src="images/news/20170223.jpg" align="left" class="news_image" /></a><br clear="all"></div>
                   </li>
                   <li class="show_list">
                     <div class="event_date">2017-01-07 (Sat)｜ <a href="http://annies-kyoto.com" target="blank">京都　伏見Annie&#39;s CAFE</a></div>
                     <div class="event_title">いかめがねすーすー企画『Aini-IKA-Night vol.3』新春大宴会</div>
                     <div class="event_cast">出演 : LOS OXXO SEXOS, いかめがねすーすー, Diskover, COMPLETED EXPOSITION, ハクバ, Foodie, TakamiSS &amp; TsuyoshiSS, BRONxxx, DO NOT, Neo Japanese, exteeeeth, SOCIAL PORKS, SUPER DUCK, N-16<br clear="all"/>
-                    <a href="/images/news/20170107.jpg" target="_blank"><img src="/images/news/20170107.jpg" class="news_image" /></a><br clear="all"</div>
+                    <a href="images/news/20170107.jpg" target="_blank"><img src="images/news/20170107.jpg" class="news_image" /></a><br clear="all"</div>
                   </li>
                   <li class="show_list">
                     <div class="event_date">2016-12-30 (Fri)｜ <a href="http://sound-powder.com/index.html" target="_blank">京都　出町柳SOCRATES</a></div>
                     <div class="event_title">『年忘れ地下音楽の会』</div>
                     <div class="event_cast">出演 : TUMULUS, MOON FACE BOYS, the Miscasts, N-16, buoy, NOISECONCRETE X 3CHI5（名古屋）, jugz（岡山）, 行楽猿（大阪） / DJ : 若松ヨウジン(quaeru)　/ FOODS : めぐみと叔母<br />
-                    <a href="/images/news/20161230_01.jpg" target="_blank"><img src="/images/news/20161230_01.jpg" class="news_image" /></a>
-                    <a href="/images/news/20161230_02.jpg" target="_blank"><img src="/images/news/20161230_02.jpg" class="news_image" /></a>
+                    <a href="images/news/20161230_01.jpg" target="_blank"><img src="images/news/20161230_01.jpg" class="news_image" /></a>
+                    <a href="images/news/20161230_02.jpg" target="_blank"><img src="images/news/20161230_02.jpg" class="news_image" /></a>
                     </div>
                   </li>
                   <li class="show_list">
                     <div class="event_date">2016-08-21 (Sun)｜ <a href="https://www.facebook.com/Nippombashi-RHB-564483146950916/" target="_blank">大阪 日本橋R/H/B</a></div>
                     <div class="event_title">Foodie presents『YUM YUM YUM vol.2』</div>
                     <div class="event_cast">出演 : <a href="https://www.facebook.com/wearefoodie" target="_blank">Foodie</a>, いかめがねすーすー, exteeeeth, N-16</div>
-                    <a href="/images/news/20160821.jpg" target="_blank"><img src="/images/news/20160821.jpg" class="news_image" /></a>
+                    <a href="images/news/20160821.jpg" target="_blank"><img src="images/news/20160821.jpg" class="news_image" /></a>
                   </li>
                   <li class="show_list">
                     <div class="event_date">2016-07-18 (Mon･Holiday)｜ <a href="http://soundstudiodom.web.fc2.com" target="_blank">高円寺Sound Studio DOM</a></div>
                     <div class="event_title">『LA FIESTA FINAL』</div>
                     <div class="event_cast">出演 : <a href="https://sacalafiesta.bandcamp.com" target="_blank">Saca La Fiesta</a>, Malimpliki, <a href="http://deathro0462.tumblr.com" target="_blank">Deathro</a>, Low Vision, N-16 / DJ：Chiro<br />
                     屋上party(drinks + vegan food by サパコ etc)</div>
-                    <a href="/images/news/20160718.jpg" target="_blank"><img src="/images/news/20160718.jpg" class="news_image" /></a>
+                    <a href="images/news/20160718.jpg" target="_blank"><img src="images/news/20160718.jpg" class="news_image" /></a>
                   </li>
                   <li class="show_list">
                     <div class="event_date">2016-07-17 (Sun)｜ <a href="http://shicho.org" target="_blank">横浜黄金町　試聴室その２</a></div>
@@ -212,14 +227,14 @@
                     <div class="event_date">2016-07-16 (Sat)｜ <a href="http://givemelittlemore.blogspot.jp" target="_blank">松本 Give me little more. </a></div>
                     <div class="event_title">『CRAZY RHYTHMS vol.72』</div>
                     <div class="event_cast">出演 : THE LOST CLUB, Gofish, ベアーズマーキン, The End, N-16 / DJ：Hungry Beat! DJs</div>
-                    <a href="/images/news/20160716_1.jpg" target="_blank"><img src="/images/news/20160716_1.jpg" class="news_image" /></a>
-                    <a href="/images/news/20160716_2.jpg" target="_blank"><img src="/images/news/20160716_2.jpg" class="news_image" /></a>
+                    <a href="images/news/20160716_1.jpg" target="_blank"><img src="images/news/20160716_1.jpg" class="news_image" /></a>
+                    <a href="images/news/20160716_2.jpg" target="_blank"><img src="images/news/20160716_2.jpg" class="news_image" /></a>
                   </li>
                   <li class="show_list">
                     <div class="event_date">2015-10-04 (Sun)｜ <a href="http://soundstudiodom.web.fc2.com" target="_blank">高円寺Sound Studio DOM</a></div>
                     <div class="event_title">【SIS】</div>
                     <div class="event_cast">出演 : Labyrinth / <a href="http://thedeathjapan.bandcamp.com" target="_blank">The DEATH</a> / <a href="http://the-scrooge.tumblr.com" target="_blank">The SCROOGE</a></div>
-                    <a href="/images/news/20151004.jpg" target="_blank"><img src="/images/news/20151004.jpg" class="news_image" /></a>
+                    <a href="images/news/20151004.jpg" target="_blank"><img src="images/news/20151004.jpg" class="news_image" /></a>
                   </li>
                   <li class="show_list">
                     <div class="event_date">2015-10-03 (Sat)｜ 北とぴあ 音楽スタジオ１・２・３（東京都北区王子）</div>
@@ -231,7 +246,7 @@
                     <div class="event_title">【Girls, Girls, Girls】</div>
                     <div class="event_cast">出演 : Clues and Codes (USA) / トンチ＋カメイナホコ</div>
                     <div class="event_cast">※ N-16 はアコースティックセットで出演</div>
-                    <a href="/images/news/20131024.jpg" target="_blank"><img src="/images/news/20131024.jpg" class="news_image" /></a>
+                    <a href="images/news/20131024.jpg" target="_blank"><img src="images/news/20131024.jpg" class="news_image" /></a>
                   </li>
                   <li class="show_list">
                     <div class="event_date">2012-04-14｜高円寺 無力無善寺</div>
@@ -295,14 +310,14 @@
         <div class="sixteen columns">
         <nav role="navigation" class="tk-lithos-pro">
         <!-- you can edit the menu from "_System/ContentHolders/menu.html" -->
-        {module_contentholder,name="Menu"}
+        <div id="footermenu"></div>
         </nav>
-        <div class="centering policy"><a href="/notation.html">特定商取引法に基づく表記</a>　｜　<a href="/privacy-policy.html">プライバシーポリシー</a></div>
+        <div class="centering policy"><a href="notation.html">特定商取引法に基づく表記</a>　｜　<a href="privacy-policy.html">プライバシーポリシー</a></div>
         <p class="copyright">Copyright &copy; 2012 MOVIE STAR RECORDS All rights reserved.</p>
         </div>
         </footer>
         <!-- Scripts moved at the end for a faster page rendering -->
-        <script src="/javascripts/menu.js"></script>
+        <script src="javascripts/menu.js"></script>
         <script type="text/javascript">
       $(document).ready(function() {
         $('.menu.dropdown ul li').click(function(){

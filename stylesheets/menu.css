@@ -19,7 +19,7 @@
 }
 
 .imgmenu{
-  background:url("/images/menu.png") top left no-repeat;
+  background:url("images/menu.png") top left no-repeat;
   margin-right: 5px;
   float: left;
   -moz-transition-duration:0.3s;
@@ -33,7 +33,7 @@
 }
 
 .imgmenu_dummy, .imgmenu:hover{
-  background:url("/images/menu_over.gif") top left no-repeat;
+  background:url("images/menu_over.gif") top left no-repeat;
 }
 
 .m_shop,.m_shop:hover{

@@ -1,6 +1,6 @@
 /* The overall elements style */
 body {
-  background-image: url(/images/background.png);
+  background-image: url(images/background.png);
   background-repeat: repeat;
   color: #333;
   margin: 0;
@@ -46,7 +46,7 @@ header.page {
 
 .image_logo {
   float: left;
-  background-image: url(/images/header_logo.png);
+  background-image: url(images/header_logo.png);
   background-repeat: no-repeat;
   background-position: left;
   background-size: contain;
@@ -68,7 +68,7 @@ header.page {
   margin: 0px auto;
   width: 100%;
   height: auto;
-  background-image: url(/images/header_box.gif);
+  background-image: url(images/header_box.gif);
   background-repeat: round;
   background-position: center;
   background-size: contain;
@@ -105,7 +105,7 @@ header.page {
 }
 
 .news_date {
-  background-image: url(/images/news_date.png);
+  background-image: url(images/news_date.png);
   background-repeat: no-repeat;
   background-position: left;
   background-origin: content-box;
@@ -124,7 +124,7 @@ header.page {
 }
 
 .latest_update li {
-  list-style-image: url(/images/latest_update_date.png);
+  list-style-image: url(images/latest_update_date.png);
   list-style-position: outside;
   text-height: 2em;
 }
@@ -173,7 +173,7 @@ header.page {
 }
 
 .show_list li {
-  list-style-image: url(/images/latest_update_date.png);
+  list-style-image: url(images/latest_update_date.png);
   list-style-position: outside;
   line-height: 184.6%;
 }
@@ -198,7 +198,7 @@ header.page {
 }
 
 .article_list li.mark_star {
-  list-style-image: url(/images/links_mark.png);
+  list-style-image: url(images/links_mark.png);
   list-style-position: outside;
   position: relative;
   top: -2px;
@@ -858,11 +858,11 @@ footer {
   margin-top: 20px !important;
   border-top: 9px solid #CCC;
 /*	border-width: 9px;*/
-  -moz-border-image: url(/images/border1.png) 9 0 0 0 / 9px 0px 0px 0px stretch;
-  -webkit-border-image: url(/images/border1.png) 9 0 0 0 / 9px 0px 0px 0px stretch;
-  -o-border-image: url(/images/border1.png) 9 0 0 0 / 9px 0px 0px 0px stretch;
-  border-image: url(/images/border1.png) 9 0 0 0 / 9px 0px 0px 0px stretch;
-  behavior: url(/includes/PIE.htc);
+  -moz-border-image: url(images/border1.png) 9 0 0 0 / 9px 0px 0px 0px stretch;
+  -webkit-border-image: url(images/border1.png) 9 0 0 0 / 9px 0px 0px 0px stretch;
+  -o-border-image: url(images/border1.png) 9 0 0 0 / 9px 0px 0px 0px stretch;
+  border-image: url(images/border1.png) 9 0 0 0 / 9px 0px 0px 0px stretch;
+  behavior: url(includes/PIE.htc);
 }
 
 footer ul {

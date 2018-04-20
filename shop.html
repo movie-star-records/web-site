@@ -4,35 +4,46 @@
         <!-- InstanceBeginEditable name="doctitle" -->
       <title>MOVIE STAR RECORDS - Shop</title>
     <!-- InstanceEndEditable --><!-- InstanceBeginEditable name="head" -->
-      <script type="text/javascript" src="/javascripts/jquery.imgpreview.js"></script>
-      <link href="/stylesheets/imgpreview.css" type="text/css" rel="stylesheet" />
+      <script type="text/javascript" src="javascripts/jquery.imgpreview.js"></script>
+      <link href="stylesheets/imgpreview.css" type="text/css" rel="stylesheet" />
     <!-- InstanceEndEditable -->
         <script type="text/javascript" src="//use.typekit.net/txo2gku.js"></script>
         <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-        <link rel="shortcut icon" href="/favicon/favicon.ico" />
-        <link rel="icon" type="image/png" href="/favicon/favicon.png" />
-        <link rel="apple-touch-icon-precomposed" href="/favicon/apple-touch-icon.png" />
-        <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png" />
-        <link href="/stylesheets/base.css" type="text/css" rel="stylesheet" />
-        <link href="/stylesheets/skeleton.css" type="text/css" rel="stylesheet" />
-        <link href="/stylesheets/layout.css" type="text/css" rel="stylesheet" />
-        <link href="/stylesheets/menu.css" type="text/css" rel="stylesheet" />
-        <link href="/stylesheets/pie.css" type="text/css" rel="stylesheet" />
+        <link rel="shortcut icon" href="favicon/favicon.ico" />
+        <link rel="icon" type="image/png" href="favicon/favicon.png" />
+        <link rel="apple-touch-icon-precomposed" href="favicon/apple-touch-icon.png" />
+        <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png" />
+        <link href="./stylesheets/base.css" type="text/css" rel="stylesheet" />
+        <link href="./stylesheets/skeleton.css" type="text/css" rel="stylesheet" />
+        <link href="./stylesheets/layout.css" type="text/css" rel="stylesheet" />
+        <link href="./stylesheets/menu.css" type="text/css" rel="stylesheet" />
+        <link href="./stylesheets/pie.css" type="text/css" rel="stylesheet" />
         <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-        <script type="text/javascript" src="/javascripts/jquery.SmoothScroll.js"></script>
+        <script type="text/javascript" src="javascripts/jquery.SmoothScroll.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-47832865-1', 'movie-star-records.info');
-  ga('send', 'pageview');
-</script>
+	  ga('create', 'UA-47832865-1', 'movie-star-records.info');
+	  ga('send', 'pageview');
+	</script>
+	<script type="text/javascript">
+		$(function(){
+			$("#latestupdate").load("_System/ContentHolders/latest-updates.html");
+			$("#latestnews").load("_System/ContentHolders/latest-news.html");
+			$("#links").load("_System/ContentHolders/links.html");
+			$("#headermenu").load("_System/ContentHolders/menu.html");
+			$("#footermenu").load("_System/ContentHolders/menu.html");
+			$("#pastupdate").load("_System/ContentHolders/past-updates.html");
+			$("#pastnews").load("_System/ContentHolders/past-news.html");
+		})
+	</script>
     </head>
     <body>
         <span id="SmartScroll.marcmoini.com"></span>
@@ -45,37 +56,41 @@
         <div class="image_logo"></div>
         <div class="header_menu_box" id="txtmenu_box">
         <div class="header_menu text_shadow">
-        <nav role="navigation" class="tk-lithos-pro">{module_contentholder,name="Menu"}</nav>
+        <nav role="navigation" class="tk-lithos-pro"><div id="headermenu"></div></nav>
         </div>
         </div>
         <div class="header_menu_box" id="imgmenu_box">
         <div class="imgmenu_dummy"></div>
-        <a href="/">
+        <a href=".">
         <div class="imgmenu m_home"></div>
         </a>
-        <a href="/about.html">
+        <a href="about.html">
         <div class="imgmenu m_about"></div>
         </a>
-        <a href="/artists.html">
+        <a href="artists.html">
         <div class="imgmenu m_artists"></div>
         </a>
-        <a href="/shows.html">
+        <a href="shows.html">
         <div class="imgmenu m_shows"></div>
         </a>
-        <a href="/discography.html">
+        <a href="discography.html">
         <div class="imgmenu m_discography"></div>
         </a>
-        <a href="/shop.html">
+        <a href="shop.html">
         <div class="imgmenu m_shop"></div>
         </a>
-        <a href="/contact.html">
+        <a href="contact.html">
         <div class="imgmenu m_contact"></div>
         </a>
         </div>
         </div>
         <div class="header_box2">
         <div class="last_modified_spacer"></div>
-        <div class="last_modified">Last Modified : {module_lastupdated}</div>
+        <div class="last_modified">Last Modified : 
+			<script type="text/javascript">
+				var str = document.lastModified;
+				document.write(str);
+			</script></div>
         </div>
         </div>
         </div>
@@ -87,67 +102,38 @@
           <div class="rough_box type2">
             <h1>Shop</h1>
             <article>
-              <p>下記注文フォームより、ご希望の商品の注文数を入力して、連絡先のメールアドレスをご記入の上、「注文」ボタンを押して下さい。折り返し、こちらからご連絡させていただきます。</p>
+              <p><a href="https://ws.formzu.net/fgen/S21476200/" target="_blank">こちら</a>の注文フォームより、ご希望の商品の注文数、連絡先をご記入の上「内容を確認する」ボタンを押し、入力内容をご確認の上、「送信する」ボタンを押して下さい。折り返し、こちらからお振込先口座等をご連絡させていただきます。</p>
             </article>
-            <h2 class="border_bottom type_h">ご注文フォーム</h2>
-              <form name="catwebformform55875" method="post" onsubmit="return checkWholeForm55875(this)" enctype="multipart/form-data" action="/FormProcessv2.aspx?WebFormID=52521&amp;OID={module_oid}&amp;OTYPE={module_otype}&amp;EID={module_eid}&amp;CID={module_cid}">
+            <h2 class="border_bottom type_h">商品一覧</h2>
+             <form>
                 <fieldset class="product_select">
                   <span class="product_name">sweet 16 diamond summit / N-16</span>
-                  <img src="/images/WEEK-02.jpg" class="product_image" />
+                  <img src="images/WEEK-02.jpg" class="product_image" />
                   <span class="price">¥2,100 (including tax)</span>
                   <span class="product_discription">
                     N-16 1stアルバム！<br />
                     2ndアルバムと同時に<br />
                     ご注文の場合に限り、<br />
-                    今なら <span class="important">2枚 ¥3,800 でご提供!<br />
-                    300円 お得です!</span><br />
-                    この機会に是非。
+                    <span class="important">2枚 ¥3,800 でご提供!<br />
+                    300円 お得です!</span>
                   </span>
-                  <input type="text" maxlength="255" name="CAT_Custom_284539" id="CAT_Custom_284539" class="order_amount required" value="0" />枚
                 </fieldset>
                 <fieldset class="product_select">
                   <span class="product_name">INHERIT / N-16</span>
-                  <img src="/images/inherit.jpg" class="product_image" />
+                  <img src="images/inherit.jpg" class="product_image" />
                   <span class="price">¥2,000 (including tax)</span>
                   <span class="product_discription">
                     2012-11-16 Release!<br />
                     N-16 10年振りの2ndアルバム！<br />
-                    当ショップでご注文の方に限り、<br />
-                    <span class="important" id="inherit-seal">先着で<br /><a href="/images/inherit-seal.jpg" onClick="return false;">INHERITシール</a> をプレゼント!</span><br />
-                    Now on Sale!<br />
+                    1stアルバムと同時に<br />
+                    ご注文の場合に限り、<br />
+                    <span class="important">2枚 ¥3,800 でご提供!<br />
+                    300円 お得です!</span>
                   </span>
-                  <input type="text" maxlength="255" name="CAT_Custom_284540" id="CAT_Custom_284540" class="order_amount required" value="0" />枚
-                </fieldset><br clear="all" />
-                <fieldset>
-                  <label for="name">Name</label>
-                  <input type="text" id="name" class="form-text required name" name="FirstName" maxlength="255" />
                 </fieldset>
-                <fieldset>
-                  <label for="email">Email</label>
-                  <input type="email" id="email" class="form-text required email" name="EmailAddress" maxlength="255" />
-                </fieldset>
-                <fieldset>
-                  <label for="CAT_Custom_278471">Message</label>
-                  <textarea name="CAT_Custom_278471" id="CAT_Custom_278471" cols="10" rows="4" class="cat_listbox" onkeydown="if(this.value.length&gt;=1024)this.value=this.value.substring(0,1023);"></textarea>
-                </fieldset>
-                <fieldset>
-                  <div class="form-text">
-                  下の画像に表示されているアルファベットを入力して下さい。<br />
-                  {module_captchav2}
-                  </div>
-                </fieldset>
-                <fieldset class="form-actions">
-                  <input class="cat_button" type="submit" value="ご注文" id="catwebformbutton" />
-                </fieldset>
-
-                <script type="text/javascript" src="/CatalystScripts/ValidationFunctions.js"></script>
-                <script type="text/javascript">
-                  //<![CDATA[
-                  var submitcount55875 = 0;function checkWholeForm55875(theForm){var why = ""; if (theForm.CAT_Custom_284539) why = isCurrency(theForm.CAT_Custom_284539.value,"ご注文数"); if (theForm.CAT_Custom_284540) why += isCurrency(theForm.CAT_Custom_284540.value,"ご注文数"); if((Number(theForm.CAT_Custom_284539.value) + Number(theForm.CAT_Custom_284540.value)) == 0) why = "- いずれかの商品のご注文数を１以上にして下さい。\r\n"; if (theForm.FirstName) why += isEmpty(theForm.FirstName.value, "お名前"); if (theForm.EmailAddress) why += checkEmail(theForm.EmailAddress.value); if (theForm.CaptchaV2) why += captchaIsInvalid(theForm, "入力されたアルファベット文字列が正しくありません。", "画像に表示されている文字列を正しく入力して下さい。"); if(why != ""){alert(why);return false;}if(submitcount55875 == 0){submitcount55875++;theForm.submit();return false;}else{alert("入力内容の確認にエラーが発生しました。");return false;}}
-                  //]]>
-                </script>
-              </form>
-            <div class="pagetop"><a href="#TOP" title="PageTop" target="_self">PageTop >></a></div>
+				 <a href="https://ws.formzu.net/fgen/S21476200/" target="_blank">ご注文フォーム >></a><br clear="all"/>
+				 <div class="pagetop"><a href="#TOP" title="PageTop" target="_self">PageTop >></a></div>
+			  </form>
           </div>
         </section>
         <section class="five columns">
@@ -159,47 +145,27 @@
                   <li>お支払方法は、<span class="important">ゆうちょ銀行・指定口座へのお振込</span>となります（振込手数料はご負担ください）。詳細は、ご注文確認メールにてご連絡させていただきます。</li>
                   <li>送料は、<span class="important">日本郵便のクリックポスト（CD2枚まで送付可）をご利用の場合に限り、無料</span>とさせていただきます（CD3枚以上をご注文の場合は要相談）。その他の配送方法をご希望の場合は、その旨をメッセージ欄にご記入ください（別途、送料をご負担いただきます）。</li>
                   <li>返品/交換の受付は、①商品の発送間違い、②音飛びなどの不良品、③輸送中または輸送業者の保管中の事故/破損　の場合のみに限らせていただきます。<span class="important">返品をご希望の場合は、商品到着後１週間以内にメール</span>にてご連絡ください。（ご返品の際にかかる送料等の諸経費は、当方の責任による返品の場合を除き、お客様にてご負担くださいますよう、よろしくお願いします）</li>
-                  <li><a href="/notation.html" target="_blank">特定商取引法に基づく表記</a>、並びに、<a href="/privacy-policy.html" target="_blank">プライバシーポリシー</a>についてもあわせてご確認ください。</li>
+                  <li><a href="notation.html" target="_blank">特定商取引法に基づく表記</a>、並びに、<a href="privacy-policy.html" target="_blank">プライバシーポリシー</a>についてもあわせてご確認ください。</li>
                 </ul>
               </div>
             </article>
             <div class="pagetop"><a href="#TOP" title="PageTop" target="_self">PageTop >></a></div>
           </div>
         </section>
-
-        <script>
-        jQuery.noConflict();
-        (function($){  
-            
-        $('#inherit-seal a').imgPreview({
-            containerID: 'imgPreviewWithStyles2',
-            imgCSS: {
-                height: 150
-            },
-            onShow: function(link){
-                $('<span>' + $(link).text() + '</span>').appendTo(this);
-            },
-            onHide: function(link){
-                $('span', this).remove();
-            }
-        });
-        
-        })(jQuery);
-        </script>
 <!-- InstanceEndEditable -->
         </div>
         <footer class="container border_bottom type1">
         <div class="sixteen columns">
         <nav role="navigation" class="tk-lithos-pro">
         <!-- you can edit the menu from "_System/ContentHolders/menu.html" -->
-        {module_contentholder,name="Menu"}
+        <div id="footermenu"></div>
         </nav>
-        <div class="centering policy"><a href="/notation.html">特定商取引法に基づく表記</a>　｜　<a href="/privacy-policy.html">プライバシーポリシー</a></div>
+        <div class="centering policy"><a href="notation.html">特定商取引法に基づく表記</a>　｜　<a href="privacy-policy.html">プライバシーポリシー</a></div>
         <p class="copyright">Copyright &copy; 2012 MOVIE STAR RECORDS All rights reserved.</p>
         </div>
         </footer>
         <!-- Scripts moved at the end for a faster page rendering -->
-        <script src="/javascripts/menu.js"></script>
+        <script src="javascripts/menu.js"></script>
         <script type="text/javascript">
       $(document).ready(function() {
         $('.menu.dropdown ul li').click(function(){

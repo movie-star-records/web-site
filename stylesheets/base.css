@@ -41,7 +41,7 @@
   article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
     display: block; }
   body {
-    background-image: url("/images/background.png");
+    background-image: url("images/background.png");
   }
   ol, ul {
     list-style: none;

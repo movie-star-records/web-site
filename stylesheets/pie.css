@@ -1,33 +1,33 @@
 /* CSS3 Document */
+.rough_box.type1 {
+  -webkit-border-image: url(images/box1.png) 9 9 9 9 / 9px 9px 9px 9px stretch;
+  -moz-border-image: url(images/box1.png) 9 9 9 9 / 9px 9px 9px 9px stretch;
+  -o-border-image: url(images/box1.png) 9 9 9 9 / 9px 9px 9px 9px stretch;
+  border-image: url(images/box1.png) 9 9 9 9 / 9px 9px 9px 9px fill stretch;
+  behavior: url(includes/PIE.htc);
+}
+
+.rough_box.type2 {
+  -webkit-border-image: url(images/box2.png) 9 9 9 9 / 9px 9px 9px 9px stretch;
+  -moz-border-image: url(images/box2.png) 9 9 9 9 / 9px 9px 9px 9px stretch;
+  -o-border-image: url(images/box2.png) 9 9 9 9 / 9px 9px 9px 9px stretch;
+  border-image: url(images/box2.png) 9 9 9 9 / 9px 9px 9px 9px fill stretch;
+  behavior: url(includes/PIE.htc);
+}
+
+.rough_box.type3 {
+  -webkit-border-image: url(images/box3.png) 9 9 9 9 / 9px 9px 9px 9px stretch;
+  -moz-border-image: url(images/box3.png) 9 9 9 9 / 9px 9px 9px 9px stretch;
+  -o-border-image: url(images/box3.png) 9 9 9 9 / 9px 9px 9px 9px stretch;
+  border-image: url(images/box3.png) 9 9 9 9 / 9px 9px 9px 9px fill stretch;
+  behavior: url(includes/PIE.htc);
+}
+
 .rough_box {
   margin: 9px;
   padding: 18px;
   border-width: 9px;
-  border-color: #000;
-}
-
-.rough_box.type1 {
-  -moz-border-image: url(/images/box1.png) 9 9 9 9 / 9px 9px 9px 9px stretch;
-  -webkit-border-image: url(/images/box1.png) 9 9 9 9 / 9px 9px 9px 9px stretch;
-  -o-border-image: url(/images/box1.png) 9 9 9 9 / 9px 9px 9px 9px stretch;
-  border-image: url(/images/box1.png) 9 9 9 9 / 9px 9px 9px 9px stretch;
-  behavior: url(/includes/PIE.htc);
-}
-
-.rough_box.type2 {
-  -moz-border-image: url(/images/box2.png) 9 9 9 9 / 9px 9px 9px 9px stretch;
-  -webkit-border-image: url(/images/box2.png) 9 9 9 9 / 9px 9px 9px 9px stretch;
-  -o-border-image: url(/images/box2.png) 9 9 9 9 / 9px 9px 9px 9px stretch;
-  border-image: url(/images/box2.png) 9 9 9 9 / 9px 9px 9px 9px stretch;
-  behavior: url(/includes/PIE.htc);
-}
-
-.rough_box.type3 {
-  -moz-border-image: url(/images/box3.png) 9 9 9 9 / 9px 9px 9px 9px stretch;
-  -webkit-border-image: url(/images/box3.png) 9 9 9 9 / 9px 9px 9px 9px stretch;
-  -o-border-image: url(/images/box3.png) 9 9 9 9 / 9px 9px 9px 9px stretch;
-  border-image: url(/images/box3.png) 9 9 9 9 / 9px 9px 9px 9px stretch;
-  behavior: url(/includes/PIE.htc);
+  border-color: #000;	
 }
 
 h1 {
@@ -35,29 +35,29 @@ h1 {
   margin: 3px 0px 20px 0px;
   padding: 3px;
   border-width: 9px;
-  -moz-border-image: url(/images/rough_box_black.png) 9 9 9 9 fill / 9px 9px 9px 9px stretch;
-  -webkit-border-image: url(/images/rough_box_black.png) 9 9 9 9 fill / 9px 9px 9px 9px stretch;
-  -o-border-image: url(/images/rough_box_black.png) 9 9 9 9 / 9px 9px 9px 9px stretch;
-  border-image: url(/images/rough_box_black.png) 9 9 9 9 fill / 9px 9px 9px 9px stretch;
-  behavior: url(/includes/PIE.htc);
+  -moz-border-image: url(images/rough_box_black.png) 9 9 9 9 fill / 9px 9px 9px 9px stretch;
+  -webkit-border-image: url(images/rough_box_black.png) 9 9 9 9 fill / 9px 9px 9px 9px stretch;
+  -o-border-image: url(images/rough_box_black.png) 9 9 9 9 / 9px 9px 9px 9px stretch;
+  border-image: url(images/rough_box_black.png) 9 9 9 9 fill / 9px 9px 9px 9px stretch;
+  behavior: url(includes/PIE.htc);
 }
 
 .border_bottom.type1 {
   border-width: 9px;
-  -moz-border-image: url(/images/border1.png) 9 0 0 0 / 9px 0px 0px 0px stretch;
-  -webkit-border-image: url(/images/border1.png) 9 0 0 0 / 9px 0px 0px 0px stretch;
-  -o-border-image: url(/images/border1.png) 9 0 0 0 / 9px 0px 0px 0px stretch;
-  border-image: url(/images/border1.png) 9 0 0 0 / 9px 0px 0px 0px stretch;
-  behavior: url(/includes/PIE.htc);
+  -moz-border-image: url(images/border1.png) 9 0 0 0 / 9px 0px 0px 0px stretch;
+  -webkit-border-image: url(images/border1.png) 9 0 0 0 / 9px 0px 0px 0px stretch;
+  -o-border-image: url(images/border1.png) 9 0 0 0 / 9px 0px 0px 0px stretch;
+  border-image: url(images/border1.png) 9 0 0 0 / 9px 0px 0px 0px stretch;
+  behavior: url(includes/PIE.htc);
 }
 
 .border_bottom.type2 {
   border-width: 3px;
-  -moz-border-image: url(/images/border2.png) 0 0 3 0 / 0px 0px 3px 0px stretch;
-  -webkit-border-image: url(/images/border2.png) 0 0 3 0 / 0px 0px 3px 0px stretch;
-  -o-border-image: url(/images/border2.png) 0 0 3 0 / 0px 0px 3px 0px stretch;
-  border-image: url(/images/border2.png) 0 0 3 0 / 0px 0px 3px 0px stretch;
-  behavior: url(/includes/PIE.htc);
+  -moz-border-image: url(images/border2.png) 0 0 3 0 / 0px 0px 3px 0px stretch;
+  -webkit-border-image: url(images/border2.png) 0 0 3 0 / 0px 0px 3px 0px stretch;
+  -o-border-image: url(images/border2.png) 0 0 3 0 / 0px 0px 3px 0px stretch;
+  border-image: url(images/border2.png) 0 0 3 0 / 0px 0px 3px 0px stretch;
+  behavior: url(includes/PIE.htc);
 }
 
 .border_bottom.type_h {
@@ -81,11 +81,11 @@ h1 {
   width: 740px;
   height: 87px;
   text-align: right;
-  -moz-border-image: url(/images/header_box.gif) 9 9 20 9 fill / 9px 9px 20px 9px stretch;
-  -webkit-border-image: url(/images/header_box.gif) 9 9 20 9 fill / 9px 9px 20px 9px stretch;
-  -o-border-image: url(/images/header_box.gif) 9 9 20 9 / 9px 9px 20px 9px stretch;
-  border-image: url(/images/header_box.gif) 9 9 20 9 fill / 9px 9px 20px 9px stretch;
-  behavior: url(/includes/PIE.htc);
+  -moz-border-image: url(images/header_box.gif) 9 9 20 9 fill / 9px 9px 20px 9px stretch;
+  -webkit-border-image: url(images/header_box.gif) 9 9 20 9 fill / 9px 9px 20px 9px stretch;
+  -o-border-image: url(images/header_box.gif) 9 9 20 9 / 9px 9px 20px 9px stretch;
+  border-image: url(images/header_box.gif) 9 9 20 9 fill / 9px 9px 20px 9px stretch;
+  behavior: url(includes/PIE.htc);
 }
 
 article img {
@@ -100,7 +100,7 @@ article img {
   -o-box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
   -ms-box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
   box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
-  behavior: url(/includes/PIE.htc);
+  behavior: url(includes/PIE.htc);
 }
   @media only screen and (max-width: 767px) {
     article img {
@@ -119,7 +119,7 @@ article img.none {
   -o-box-shadow: none;
   -ms-box-shadow: none;
   box-shadow: none;
-  behavior: url(/includes/PIE.htc);
+  behavior: url(includes/PIE.htc);
 }
 
 article .profile_image {
@@ -195,7 +195,7 @@ article .disc_description .soundcloud {
   -o-box-shadow: none;
   -ms-box-shadow: none;
   box-shadow: none;
-  behavior: url(/includes/PIE.htc);
+  behavior: url(includes/PIE.htc);
 }
 
 article::after {
