@@ -570,6 +570,10 @@ form fieldset .price {
   vertical-align: middle;
 }
 
+form fieldset #order_item {
+  width: 380px;
+}
+
 form fieldset .product_discription {
   display: block;
   text-align: center;
@@ -1023,6 +1027,10 @@ footer p {
     .last_modified {
       font-size: 77%;
     }
+
+	form fieldset #order_item {
+	  width: 300px;
+	}
 
 	 header nav ul li {
       font-size: 93%;

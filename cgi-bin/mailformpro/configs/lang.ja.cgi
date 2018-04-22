@@ -5,6 +5,7 @@
 
 $lang{'email'} = 'メールアドレス';
 $lang{'confirm_email'} = 'メールアドレス(確認用)';
+$lang{'order_item'} = 'ご注文内容';
 $lang{'contact_name'} = 'お名前';
 $lang{'contact_message'} = 'メッセージ';
 $lang{'keep_resume'} = '入力内容の保持';

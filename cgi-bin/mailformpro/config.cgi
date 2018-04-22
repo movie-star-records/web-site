@@ -32,7 +32,7 @@ $config{'SerialFormat'} = '<date>%04d';
 $config{'SerialBoost'} = 0;
 
 ## サンクスページのURL(URLかsend.cgiから見た相対パス)
-$config{'ThanksPage'} = '../../thanks.html';
+$config{'ThanksPage'} = '../../contact_thanks.html';
 
 ## 設置者に届くメールの件名
 $config{'subject'} = '[ %s ] お問い合せフォームから';
@@ -136,10 +136,10 @@ $config{'dir.AddOns'} = './add-ons/';
 @AddOns = ();
 #push @AddOns,'OperationCheck.js';		## 動作チェック ※本番では消してください
 push @AddOns,'charactercheck.js';		## 文字校正
-push @AddOns,'prefcode/prefcode.js';	## 郵便番号からの住所入力
+#push @AddOns,'prefcode/prefcode.js';	## 郵便番号からの住所入力
 #push @AddOns,'prefcodeadv/prefcode.js';## 郵便番号からの住所入力(高機能・高負荷)
-push @AddOns,'furigana.js';				## フリガナ(Firefox非対応)
-push @AddOns,'datelist.js';				## 日付リストの生成機能 [Update]
+#push @AddOns,'furigana.js';				## フリガナ(Firefox非対応)
+#push @AddOns,'datelist.js';				## 日付リストの生成機能 [Update]
 push @AddOns,'ok.js';					## OKアドオン [New]
 push @AddOns,'nospace.js';				## スペースのみの入力を無効
 push @AddOns,'toggle.js';				## 入力欄の可変
@@ -161,7 +161,7 @@ push @AddOns,'toggle.js';				## 入力欄の可変
 push @AddOns,'defaultValue.js';			## 初期値を無効
 #push @AddOns,'estimate.js';			## 見積計算(ベータ版)
 #push @AddOns,'beforeunload.js';		## ページを離脱する際のアラート(ベータ版)
-#push @AddOns,'setValue.js';			## 初期値をセット
+push @AddOns,'setValue.js';				## 初期値をセット
 #push @AddOns,'errorScroll.js';			## エラー時に対象エレメントまでスクロール(ベータ版)
 #push @AddOns,'reserve.js';				## 予約受付 [New]
 #push @AddOns,'taboowords/taboowords.js';## 禁止ワードの指定 [New]
@@ -182,7 +182,7 @@ push @AddOns,'mobileScrollFix.js';		## [New] モバイル端末エラー時の�
 ####################################################
 
 @Modules = ();
-#push @Modules,'MultiConfig';	## 複数の設定ファイルを分岐させる
+push @Modules,'MultiConfig';	## 複数の設定ファイルを分岐させる
 #push @Modules,'check';			## CGI動作環境チェック ※本番では消してください
 #push @Modules,'logger';		## アクセス解析ログモジュール
 #push @Modules,'thanks';		## サンクスページへの引き継ぎ
@@ -249,25 +249,11 @@ $config{'seek'} = 0;
 
 ## 各種データを格納しているファイル
 
-$config{'data.dir'} = './data/';
-
-## [0] Serial, [1] InputTime, [2] ConfirmTime, [3] UniqueUser
-$config{'file.data'} = "$config{'data.dir'}dat.mailformpro.cgi";
-
-## ドロップ検知
-$config{'file.drop'} = "$config{'data.dir'}dat.drop.cgi";
-
-## jsキャッシュ
-$config{'file.cache'} = "$config{'data.dir'}mfp.cache.js";
-
 ## 言語設定ファイル
 $config{'lang'} = 'lang.ja';
 #$config{'lang'} = 'lang.en';
 
 ## スクリプトのURL / ※基本的にここは変更しなくてOKです
 $config{'uri'} = 'http://' . $ENV{'SERVER_NAME'} . $ENV{'SCRIPT_NAME'};
-
-## Prefix
-$config{'prefix'} = '_MFP';
 
 1;

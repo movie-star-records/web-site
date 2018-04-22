@@ -55,6 +55,7 @@ var mfpLang = {
 	'ReservedWord': {
 		'email': 'メールアドレス',
 		'confirm_email': '確認用',
+		'order_item': 'ご注文内容',
 		'contact_name': 'お名前',
 		'contact_message': 'メッセージ',
 		'price': 'お支払い代金',

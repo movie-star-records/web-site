@@ -1,3 +1,4 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><!-- InstanceBegin template="/Templates/Main Template.dwt" codeOutsideHTMLIsLocked="false" -->
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -12,11 +13,11 @@
         <link rel="icon" type="image/png" href="favicon/favicon.png" />
         <link rel="apple-touch-icon-precomposed" href="favicon/apple-touch-icon.png" />
         <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png" />
-        <link href="./stylesheets/base.css" type="text/css" rel="stylesheet" />
-        <link href="./stylesheets/skeleton.css" type="text/css" rel="stylesheet" />
-        <link href="./stylesheets/layout.css" type="text/css" rel="stylesheet" />
-        <link href="./stylesheets/menu.css" type="text/css" rel="stylesheet" />
-        <link href="./stylesheets/pie.css" type="text/css" rel="stylesheet" />
+        <link href="stylesheets/base.css" type="text/css" rel="stylesheet" />
+        <link href="stylesheets/skeleton.css" type="text/css" rel="stylesheet" />
+        <link href="stylesheets/layout.css" type="text/css" rel="stylesheet" />
+        <link href="stylesheets/menu.css" type="text/css" rel="stylesheet" />
+        <link href="stylesheets/pie.css" type="text/css" rel="stylesheet" />
         <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
@@ -109,28 +110,29 @@
         <section class="eleven columns">
           <div class="rough_box type1">
             <h2 class="border_bottom type_h">お問合せフォーム</h2>
-			<link rel="stylesheet" href="cgi-bin/mfp.statics/mailformpro.css" type="text/css" /><form id="mailformpro" action="cgi-bin/mailformpro/mailformpro.cgi" method="POST">
+			<link rel="stylesheet" href="cgi-bin/mfp.statics/mailformpro.css" type="text/css" />
+			<form id="mailformpro" action="cgi-bin/mailformpro/mailformpro.cgi?type=contact" method="POST">
               <fieldset>
                 <label for="name">Name</label>
-                <input type="text" id="name" class="form-text required name" required="required" name="contact_name" maxlength="255" />
+                <input type="text" id="name" class="form-text required name" required="required" name="contact_name" maxlength="255" data-value=""/>
               </fieldset>
               <fieldset>
                 <label for="email">Email</label>
-                <input type="email" id="email" class="form-text required email" required="required" name="email" maxlength="255" />
+                <input type="email" id="email" class="form-text required email" required="required" name="email" maxlength="255" data-value=""/>
               </fieldset>
 			  <fieldset>
                 <label for="email">Email (確認)</label>
-                <input type="email" id="confirm_email" class="form-text required email" required="required" name="confirm_email" maxlength="255" />
+                <input type="email" id="confirm_email" class="form-text required email" required="required" name="confirm_email" maxlength="255" data-value="" data-post-disable="1" />
 			  </fieldset>
               <fieldset>
                 <label for="message">Message</label>
-                <textarea name="contact_message" id="message" class="required" required="required" rows="20" cols="40"></textarea>
+                <textarea name="contact_message" id="contact_message" class="required" required="required" rows="20" cols="40" data-value=""></textarea>
               </fieldset>
               <fieldset class="form-actions">
                 <input type="submit" value="送信" />
               </fieldset>
             </form>
-			<script type="text/javascript" id="mfpjs" src="cgi-bin/mailformpro/mailformpro.cgi" charset="UTF-8"></script>
+			<script type="text/javascript" id="mfpjs" src="cgi-bin/mailformpro/mailformpro.cgi?type=contact" charset="UTF-8"></script>
 		  </div>
 		</section>
 <!-- InstanceEndEditable -->

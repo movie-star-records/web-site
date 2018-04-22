@@ -1,11 +1,10 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><!-- InstanceBegin template="/Templates/Main Template.dwt" codeOutsideHTMLIsLocked="false" -->
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <!-- InstanceBeginEditable name="doctitle" -->
       <title>MOVIE STAR RECORDS - Shop</title>
     <!-- InstanceEndEditable --><!-- InstanceBeginEditable name="head" -->
-      <script type="text/javascript" src="javascripts/jquery.imgpreview.js"></script>
-      <link href="stylesheets/imgpreview.css" type="text/css" rel="stylesheet" />
     <!-- InstanceEndEditable -->
         <script type="text/javascript" src="//use.typekit.net/txo2gku.js"></script>
         <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
@@ -13,11 +12,11 @@
         <link rel="icon" type="image/png" href="favicon/favicon.png" />
         <link rel="apple-touch-icon-precomposed" href="favicon/apple-touch-icon.png" />
         <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png" />
-        <link href="./stylesheets/base.css" type="text/css" rel="stylesheet" />
-        <link href="./stylesheets/skeleton.css" type="text/css" rel="stylesheet" />
-        <link href="./stylesheets/layout.css" type="text/css" rel="stylesheet" />
-        <link href="./stylesheets/menu.css" type="text/css" rel="stylesheet" />
-        <link href="./stylesheets/pie.css" type="text/css" rel="stylesheet" />
+        <link href="stylesheets/base.css" type="text/css" rel="stylesheet" />
+        <link href="stylesheets/skeleton.css" type="text/css" rel="stylesheet" />
+        <link href="stylesheets/layout.css" type="text/css" rel="stylesheet" />
+        <link href="stylesheets/menu.css" type="text/css" rel="stylesheet" />
+        <link href="stylesheets/pie.css" type="text/css" rel="stylesheet" />
         <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
@@ -102,10 +101,11 @@
           <div class="rough_box type2">
             <h1>Shop</h1>
             <article>
-              <p><a href="https://ws.formzu.net/fgen/S21476200/" target="_blank">こちら</a>の注文フォームより、ご希望の商品の注文数、連絡先をご記入の上「内容を確認する」ボタンを押し、入力内容をご確認の上、「送信する」ボタンを押して下さい。折り返し、こちらからお振込先口座等をご連絡させていただきます。</p>
+              <p>ご注文フォームより、ご希望の商品の注文数、ご連絡先メールアドレス等をご記入の上「ご注文」ボタンを押し、入力内容をご確認の上、「送信する」ボタンを押して下さい。折り返し、こちらからご連絡させていただきます。</p>
             </article>
-            <h2 class="border_bottom type_h">商品一覧</h2>
-             <form>
+            <h2 class="border_bottom type_h">ご注文フォーム</h2>
+			<link rel="stylesheet" href="cgi-bin/mfp.statics/mailformpro.css" type="text/css" />
+			<form id="mailformpro" action="cgi-bin/mailformpro/mailformpro.cgi?type=shop" method="POST">
                 <fieldset class="product_select">
                   <span class="product_name">sweet 16 diamond summit / N-16</span>
                   <img src="images/WEEK-02.jpg" class="product_image" />
@@ -114,7 +114,7 @@
                     N-16 1stアルバム！<br />
                     2ndアルバムと同時に<br />
                     ご注文の場合に限り、<br />
-                    <span class="important">2枚 ¥3,800 でご提供!<br />
+                    <span class="important">1st+2nd合わせて ¥3,800 でご提供!<br />
                     300円 お得です!</span>
                   </span>
                 </fieldset>
@@ -127,13 +127,44 @@
                     N-16 10年振りの2ndアルバム！<br />
                     1stアルバムと同時に<br />
                     ご注文の場合に限り、<br />
-                    <span class="important">2枚 ¥3,800 でご提供!<br />
+                    <span class="important">1st+2nd合わせて ¥3,800 でご提供!<br />
                     300円 お得です!</span>
                   </span>
                 </fieldset>
-				 <a href="https://ws.formzu.net/fgen/S21476200/" target="_blank">ご注文フォーム >></a><br clear="all"/>
-				 <div class="pagetop"><a href="#TOP" title="PageTop" target="_self">PageTop >></a></div>
-			  </form>
+				<fieldset>
+					<label for="order_item">Order</label>
+					<select name="order_item" id="order_item" required="required">
+					<option value="" data-price="0"></option>
+					<option value="sweet 16 diamond summit / ¥2,100" id="order1" data-price="2100">sweet 16 diamond summit / ¥2,100</option>
+					<option value="INHERIT / ¥2,000" id="order2" data-price="2000">INHERIT / ¥2,000</option>
+					<option value="sweet 16 diamond summit & INHERIT / ¥3,800" id="order3" data-price="3800">sweet 16 diamond summit & INHERIT / ¥3,800</option>
+					</select>
+				</fieldset>
+				  <fieldset>
+					<label for="name">Name</label>
+					<input type="text" id="contact_name" class="form-text required name" required="required" name="contact_name" maxlength="255" data-value=""/>
+				  </fieldset>
+				  <fieldset>
+					<label for="email">Email</label>
+					<input type="email" id="email" class="form-text required email" required="required" name="email" maxlength="255" data-value=""/>
+				  </fieldset>
+				  <fieldset>
+					<label for="email">Email (確認)</label>
+					<input type="email" id="confirm_email" class="form-text required email" required="required" name="confirm_email" maxlength="255" data-value="" data-post-disable="1" />
+				  </fieldset>
+				  <fieldset>
+					<label for="message">Message</label>
+					<textarea name="contact_message" id="contact_message" rows="20" cols="40" data-value=""></textarea>
+				  </fieldset>
+				  <fieldset class="form-actions">
+				    <input type="submit" value="ご注文" />
+				  </fieldset>
+				<!--
+				<a href="https://ws.formzu.net/fgen/S21476200/" target="_blank">ご注文フォーム >></a>
+				-->
+			  </form><br clear="all"/>
+			  <div class="pagetop"><a href="#TOP" title="PageTop" target="_self">PageTop >></a></div>
+			<script type="text/javascript" id="mfpjs" src="cgi-bin/mailformpro/mailformpro.cgi?type=shop" charset="UTF-8"></script>
           </div>
         </section>
         <section class="five columns">
