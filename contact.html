@@ -112,25 +112,25 @@
             <h2 class="border_bottom type_h">お問合せフォーム</h2>
 			<link rel="stylesheet" href="cgi-bin/mfp.statics/mailformpro.css" type="text/css" />
 			<form id="mailformpro" action="cgi-bin/mailformpro/mailformpro.cgi?type=contact" method="POST">
-              <fieldset>
+              <div class="fieldset">
                 <label for="name">Name</label>
                 <input type="text" id="name" class="form-text required name" required="required" name="contact_name" maxlength="255" data-value=""/>
-              </fieldset>
-              <fieldset>
+              </div>
+              <div class="fieldset">
                 <label for="email">Email</label>
                 <input type="email" id="email" class="form-text required email" required="required" name="email" maxlength="255" data-value=""/>
-              </fieldset>
-			  <fieldset>
+              </div>
+			  <div class="fieldset">
                 <label for="email">Email (確認)</label>
                 <input type="email" id="confirm_email" class="form-text required email" required="required" name="confirm_email" maxlength="255" data-value="" data-post-disable="1" />
-			  </fieldset>
-              <fieldset>
+			  </div>
+              <div class="fieldset">
                 <label for="message">Message</label>
                 <textarea name="contact_message" id="contact_message" class="required" required="required" rows="20" cols="40" data-value=""></textarea>
-              </fieldset>
-              <fieldset class="form-actions">
+              </div>
+              <div class="fieldset form-actions">
                 <input type="submit" value="送信" />
-              </fieldset>
+              </div>
             </form>
 			<script type="text/javascript" id="mfpjs" src="cgi-bin/mailformpro/mailformpro.cgi?type=contact" charset="UTF-8"></script>
 		  </div>

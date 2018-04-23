@@ -353,7 +353,7 @@
   form {
     margin-bottom: 20px;
   }
-  fieldset {
+  div.fieldset {
     margin-bottom: 20px;
   }
   input[type="text"],

@@ -106,65 +106,62 @@
             <h2 class="border_bottom type_h">ご注文フォーム</h2>
 			<link rel="stylesheet" href="cgi-bin/mfp.statics/mailformpro.css" type="text/css" />
 			<form id="mailformpro" action="cgi-bin/mailformpro/mailformpro.cgi?type=shop" method="POST">
-                <fieldset class="product_select">
+                <div class="fieldset product_select">
                   <span class="product_name">sweet 16 diamond summit / N-16</span>
                   <img src="images/WEEK-02.jpg" class="product_image" />
-                  <span class="price">¥2,100 (including tax)</span>
+                  <span class="price">&yen;2,100 (including tax)</span>
                   <span class="product_discription">
                     N-16 1stアルバム！<br />
                     2ndアルバムと同時に<br />
                     ご注文の場合に限り、<br />
-                    <span class="important">1st+2nd合わせて ¥3,800 でご提供!<br />
-                    300円 お得です!</span>
+                    <span class="important">1st+2nd合わせて &yen;3,800 でご提供!<br />
+                    &yen;300 お得です!</span>
                   </span>
-                </fieldset>
-                <fieldset class="product_select">
+                </div>
+                <div class="fieldset product_select">
                   <span class="product_name">INHERIT / N-16</span>
                   <img src="images/inherit.jpg" class="product_image" />
-                  <span class="price">¥2,000 (including tax)</span>
+                  <span class="price">&yen;2,000 (including tax)</span>
                   <span class="product_discription">
                     2012-11-16 Release!<br />
                     N-16 10年振りの2ndアルバム！<br />
                     1stアルバムと同時に<br />
                     ご注文の場合に限り、<br />
-                    <span class="important">1st+2nd合わせて ¥3,800 でご提供!<br />
-                    300円 お得です!</span>
+                    <span class="important">1st+2nd合わせて &yen;3,800 でご提供!<br />
+                    &yen;300 お得です!</span>
                   </span>
-                </fieldset>
-				<fieldset>
+                </div><br clear="all" />
+				<div class="fieldset">
 					<label for="order_item">Order</label>
 					<select name="order_item" id="order_item" required="required">
 					<option value="" data-price="0"></option>
-					<option value="sweet 16 diamond summit / ¥2,100" id="order1" data-price="2100">sweet 16 diamond summit / ¥2,100</option>
-					<option value="INHERIT / ¥2,000" id="order2" data-price="2000">INHERIT / ¥2,000</option>
-					<option value="sweet 16 diamond summit & INHERIT / ¥3,800" id="order3" data-price="3800">sweet 16 diamond summit & INHERIT / ¥3,800</option>
+					<option value="sweet 16 diamond summit / &yen;2,100" id="order1" data-price="2100">sweet 16 diamond summit / &yen;2,100</option>
+					<option value="INHERIT / &yen;2,000" id="order2" data-price="2000">INHERIT / &yen;2,000</option>
+					<option value="sweet 16 diamond summit & INHERIT / &yen;3,800" id="order3" data-price="3800">sweet 16 diamond summit & INHERIT / &yen;3,800</option>
 					</select>
-				</fieldset>
-				  <fieldset>
+				</div>
+				  <div class="fieldset">
 					<label for="name">Name</label>
 					<input type="text" id="contact_name" class="form-text required name" required="required" name="contact_name" maxlength="255" data-value=""/>
-				  </fieldset>
-				  <fieldset>
+				  </div>
+				  <div class="fieldset">
 					<label for="email">Email</label>
 					<input type="email" id="email" class="form-text required email" required="required" name="email" maxlength="255" data-value=""/>
-				  </fieldset>
-				  <fieldset>
+				  </div>
+				  <div class="fieldset">
 					<label for="email">Email (確認)</label>
 					<input type="email" id="confirm_email" class="form-text required email" required="required" name="confirm_email" maxlength="255" data-value="" data-post-disable="1" />
-				  </fieldset>
-				  <fieldset>
+				  </div>
+				  <div class="fieldset">
 					<label for="message">Message</label>
 					<textarea name="contact_message" id="contact_message" rows="20" cols="40" data-value=""></textarea>
-				  </fieldset>
-				  <fieldset class="form-actions">
+				  </div>
+				  <div class="fieldset form-actions">
 				    <input type="submit" value="ご注文" />
-				  </fieldset>
-				<!--
-				<a href="https://ws.formzu.net/fgen/S21476200/" target="_blank">ご注文フォーム >></a>
-				-->
+				  </div>
 			  </form><br clear="all"/>
+			  <script type="text/javascript" id="mfpjs" src="cgi-bin/mailformpro/mailformpro.cgi?type=shop" charset="UTF-8"></script>
 			  <div class="pagetop"><a href="#TOP" title="PageTop" target="_self">PageTop >></a></div>
-			<script type="text/javascript" id="mfpjs" src="cgi-bin/mailformpro/mailformpro.cgi?type=shop" charset="UTF-8"></script>
           </div>
         </section>
         <section class="five columns">
@@ -175,7 +172,7 @@
                 <ul>
                   <li>お支払方法は、<span class="important">ゆうちょ銀行・指定口座へのお振込</span>となります（振込手数料はご負担ください）。詳細は、ご注文確認メールにてご連絡させていただきます。</li>
                   <li>送料は、<span class="important">日本郵便のクリックポスト（CD2枚まで送付可）をご利用の場合に限り、無料</span>とさせていただきます（CD3枚以上をご注文の場合は要相談）。その他の配送方法をご希望の場合は、その旨をメッセージ欄にご記入ください（別途、送料をご負担いただきます）。</li>
-                  <li>返品/交換の受付は、①商品の発送間違い、②音飛びなどの不良品、③輸送中または輸送業者の保管中の事故/破損　の場合のみに限らせていただきます。<span class="important">返品をご希望の場合は、商品到着後１週間以内にメール</span>にてご連絡ください。（ご返品の際にかかる送料等の諸経費は、当方の責任による返品の場合を除き、お客様にてご負担くださいますよう、よろしくお願いします）</li>
+                  <li>返品/交換の受付は、?商品の発送間違い、?音飛びなどの不良品、?輸送中または輸送業者の保管中の事故/破損　の場合のみに限らせていただきます。<span class="important">返品をご希望の場合は、商品到着後１週間以内にメール</span>にてご連絡ください。（ご返品の際にかかる送料等の諸経費は、当方の責任による返品の場合を除き、お客様にてご負担くださいますよう、よろしくお願いします）</li>
                   <li><a href="notation.html" target="_blank">特定商取引法に基づく表記</a>、並びに、<a href="privacy-policy.html" target="_blank">プライバシーポリシー</a>についてもあわせてご確認ください。</li>
                 </ul>
               </div>

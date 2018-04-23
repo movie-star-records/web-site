@@ -528,31 +528,31 @@ ol.slats li p span.meta {
 
 /* ----------------------- FORM ----------------------- */
 
-form fieldset {
+form div.fieldset {
   margin: 0 0 10px 0;
   padding: 0 0 10px 0;
   font-size: 100%;
   border-bottom: 1px solid #ddd;
 }
 
-form fieldset.form-actions {
+form div.fieldset.form-actions {
   margin: 0 0 0 15%;
   padding: 0;
   border: none;
 }
 
-form fieldset.check {
+form div.fieldset.check {
   padding-left: 15%;	
 }
 
-form fieldset label {
+form div.fieldset label {
   float: left;
   width: 15%;
   margin: 4px 0 5px 0;
   font-weight: bold;
 }
 
-form fieldset .product_name {
+form div.fieldset .product_name {
   display: block;
   text-align: center;
   font-weight: bold;
@@ -562,7 +562,7 @@ form fieldset .product_name {
   vertical-align: middle;
 }
 
-form fieldset .price {
+form div.fieldset .price {
   display: block;
   text-align: center;
   margin: 1em auto;
@@ -570,50 +570,50 @@ form fieldset .price {
   vertical-align: middle;
 }
 
-form fieldset #order_item {
+form div.fieldset #order_item {
   width: 380px;
 }
 
-form fieldset .product_discription {
+form div.fieldset .product_discription {
   display: block;
   text-align: center;
   height: 10em;
   margin: 1em auto;
 }
 
-form fieldset .product_discription .important {
+form div.fieldset .product_discription .important {
   font-weight: bold;
   color: #F00;
 }
 
-form fieldset .product_discription .important a,
-form fieldset .product_discription .important a:visited {
+form div.fieldset .product_discription .important a,
+form div.fieldset .product_discription .important a:visited {
   font-weight: inherit;
   color: #06F;
 }
 
-form fieldset .product_discription .important a:hover,
-form fieldset .product_discription .important a:focus {
+form div.fieldset .product_discription .important a:hover,
+form div.fieldset .product_discription .important a:focus {
   font-weight: inherit;
   color: #F00;
 }
 
-form fieldset.check label {
+form div.fieldset.check label {
   display: inline;
   float: none;
   width: auto;
   font-weight: normal;
 }
 
-form fieldset.radio ul li label {
+form div.fieldset.radio ul li label {
   display: inline;
   float: none;
   width: auto;
   font-weight: normal;
 }
 
-form fieldset input.form-text,
-form fieldset textarea {
+form div.fieldset input.form-text,
+form div.fieldset textarea {
   display: block;
   width: 80%;
   padding: 5px;
@@ -628,24 +628,24 @@ form fieldset textarea {
   border-radius: 4px;
 }
 
-form fieldset input.form-text:focus,
-form fieldset input.order_amount:focus {
+form div.fieldset input.form-text:focus,
+form div.fieldset input.order_amount:focus {
   border: 1px solid #ccc;
   background: #fff;
 }
 
-form fieldset.product_select {
+form div.fieldset.product_select {
   display: block;
   float: left;
   width: 50%;
 }
   @media only screen and (max-width: 767px) {
-    form fieldset.product_select {
+    form div.fieldset.product_select {
       width: 100%;
     }
   }
 
-form fieldset .product_image {
+form div.fieldset .product_image {
   display: block;
   margin: 5px auto;
   text-align: center;
@@ -658,15 +658,15 @@ form fieldset .product_image {
   behavior: url(/includes/PIE.htc);
 }
 
-form fieldset textarea {
+form div.fieldset textarea {
   height: 150px;
 }
 
-form fieldset .form-text {
+form div.fieldset .form-text {
   padding-left: 15%;	
 }
 
-form fieldset .order_amount {
+form div.fieldset .order_amount {
   display: inline;
   margin: 0% 1% 0% 40%;
   width: 20%;
@@ -680,19 +680,19 @@ form fieldset .order_amount {
   border-radius: 4px;
 }
 
-form fieldset.radio ul {
+form div.fieldset.radio ul {
   margin: 5px 0 0 12%;
 }
 
-form fieldset.radio ul li {
+form div.fieldset.radio ul li {
   margin: 0 0 5px 0;
 }
 
-form fieldset.radio ul li:last-child {
+form div.fieldset.radio ul li:last-child {
   margin: 0;
 }
 
-form fieldset p.form-help {
+form div.fieldset p.form-help {
   margin: 5px 0 0 12%;
   font-size: 93%;
   color: #999;
@@ -722,23 +722,23 @@ form input[type="submit"]:active {
 }
 
   @media screen and (max-width: 600px) {
-    form fieldset label {
+    form div.fieldset label {
       display: block;
       float: none;
       width: auto;
       margin: 0 0 5px 0;
     }
 
-    form fieldset.form-actions,
-    form fieldset.check,
-    form fieldset.radio ul,
-    form fieldset p.form-help {
+    form div.fieldset.form-actions,
+    form div.fieldset.check,
+    form div.fieldset.radio ul,
+    form div.fieldset p.form-help {
       margin-left: 0;
       padding-left: 0;
     }
 
-    form fieldset input.form-text,
-    form fieldset textarea {
+    form div.fieldset input.form-text,
+    form div.fieldset textarea {
       width: 100%;
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
@@ -1028,7 +1028,7 @@ footer p {
       font-size: 77%;
     }
 
-	form fieldset #order_item {
+	form div.fieldset #order_item {
 	  width: 300px;
 	}
 
