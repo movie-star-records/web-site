@@ -2,7 +2,8 @@
 <html><!-- InstanceBegin template="/Templates/Main Template.dwt" codeOutsideHTMLIsLocked="false" -->
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <!-- InstanceBeginEditable name="doctitle" --><title>MOVIE STAR RECORDS - Contact</title><!-- InstanceEndEditable --><!-- InstanceBeginEditable name="head" -->
+        <!-- InstanceBeginEditable name="doctitle" --><title>MOVIE STAR RECORDS - Contact</title>
+		<script type="text/javascript" src="javascripts/postform.js"></script><!-- InstanceEndEditable --><!-- InstanceBeginEditable name="head" -->
 
 
     
@@ -119,7 +120,7 @@
           <div class="rough_box type1">
             <h2 class="border_bottom type_h">お問合せフォーム</h2>
 			<link rel="stylesheet" href="cgi-bin/mfp.statics/mailformpro.css" type="text/css" />
-			<form id="mailformpro" action="cgi-bin/mailformpro/mailformpro.cgi?type=contact" method="POST">
+			<form id="mailformpro" action="/badPost" onSubmit="return validateFormContact()" method="POST">
               <div class="fieldset">
                 <label for="name">Name</label>
                 <input type="text" id="name" class="form-text required name" required="required" name="contact_name" maxlength="255" data-value=""/>

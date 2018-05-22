@@ -3,8 +3,8 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <!-- InstanceBeginEditable name="doctitle" -->
-      <title>MOVIE STAR RECORDS - Shop</title>
-    <!-- InstanceEndEditable --><!-- InstanceBeginEditable name="head" -->
+      	<title>MOVIE STAR RECORDS - Shop</title>
+		<script type="text/javascript" src="javascripts/postform.js"></script><!-- InstanceEndEditable --><!-- InstanceBeginEditable name="head" -->
     <!-- InstanceEndEditable -->
 		<script>
 		  (function(d) {
@@ -113,7 +113,7 @@
             </article>
             <h2 class="border_bottom type_h">ご注文フォーム</h2>
 			<link rel="stylesheet" href="cgi-bin/mfp.statics/mailformpro.css" type="text/css" />
-			<form id="mailformpro" action="cgi-bin/mailformpro/mailformpro.cgi?type=shop" method="POST">
+			<form id="mailformpro" action="/badPost" onSubmit="return validateFormShop()" method="POST">
                 <div class="fieldset product_select">
                   <span class="product_name">sweet 16 diamond summit / N-16</span>
                   <img src="images/WEEK-02.jpg" class="product_image" alt="">
