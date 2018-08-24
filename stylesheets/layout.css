@@ -142,16 +142,16 @@ header.page {
   display: none;
 }
 
-.top3 article:nth-child(n+4) {
+.top3 article:nth-child(n+5) {
   display: none;
 }
-.top2 article:nth-child(n+3) {
+.top2 article:nth-child(n+4) {
   display: none;
 }
-.after3 article:nth-child(-n+3) {
+.after3 article:nth-child(-n+4) {
   display: none;
 }
-.after2 article:nth-child(-n+2) {
+.after2 article:nth-child(-n+3) {
   display: none;
 }
 
