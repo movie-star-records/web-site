@@ -4,7 +4,8 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <!-- InstanceBeginEditable name="doctitle" -->
       	<title>MOVIE STAR RECORDS - Shop</title>
-		<script type="text/javascript" src="javascripts/postform.js"></script><!-- InstanceEndEditable --><!-- InstanceBeginEditable name="head" -->
+		<!--<script type="text/javascript" src="javascripts/postform.js"></script>
+		<script type="text/javascript" src="cgi-bin/mfp.statics/cart.js"></script>--><!-- InstanceEndEditable --><!-- InstanceBeginEditable name="head" -->
     <!-- InstanceEndEditable -->
 		<script>
 		  (function(d) {
@@ -109,11 +110,11 @@
           <div class="rough_box type2">
             <h1>Shop</h1>
             <article>
-              <p>ご注文フォームより、ご希望の商品の注文数、ご連絡先メールアドレス等をご記入の上「ご注文」ボタンを押し、入力内容をご確認の上、「送信する」ボタンを押して下さい。折り返し、こちらからご連絡させていただきます。</p>
+              <p>ご注文フォームより、ご希望の商品の注文数、お名前、ご連絡先メールアドレス等をご記入の上「内容確認画面へ」ボタンを押し、入力内容をご確認の上、「送信する」ボタンを押して下さい。折り返し、こちらからご連絡させていただきます。</p>
             </article>
-            <h2 class="border_bottom type_h">ご注文フォーム</h2>
-			<link rel="stylesheet" href="cgi-bin/mfp.statics/mailformpro.css" type="text/css" />
+            <h2 class="border_bottom type_h">商品案内</h2>
 			<form id="mailformpro" action="/badPost" onSubmit="return validateFormShop()" method="POST">
+				<!--<link rel="stylesheet" href="cgi-bin/mfp.statics/mailformpro.css" type="text/css" />-->
                 <div class="fieldset product_select">
                   <span class="product_name">sweet 16 diamond summit / N-16</span>
                   <img src="images/WEEK-02.jpg" class="product_image" alt="">
@@ -122,8 +123,8 @@
                     N-16 1stアルバム！<br>
                     2ndアルバムと同時に<br>
                     ご注文の場合に限り、<br>
-                    <span class="important">1st+2nd合わせて &yen;3,800 でご提供!<br>
-                    &yen;300 お得です!</span>
+                    <span class="important">1st+2nd合わせて &yen;3,800 でご提供！<br>
+                    &yen;300 お得です！</span>
                   </span>
                 </div>
                 <div class="fieldset product_select">
@@ -135,9 +136,35 @@
                     N-16 10年振りの2ndアルバム！<br>
                     1stアルバムと同時に<br>
                     ご注文の場合に限り、<br>
-                    <span class="important">1st+2nd合わせて &yen;3,800 でご提供!<br>
-                    &yen;300 お得です!</span>
+                    <span class="important">1st+2nd合わせて &yen;3,800 でご提供！<br>
+                    &yen;300 お得です！</span>
                   </span>
+                </div><br clear="all">
+                <div class="fieldset product_select">
+                  <span class="product_name">Grist Zine Vol.2 / 想考舎</span>
+                  <img src="images/grist_vol2_a.jpg" class="product_image" alt="">
+                  <span class="price">&yen;300 (including tax)</span>
+                  <span class="product_discription">
+                    2022年3月発売。<br>
+                    福岡のSHUTOPIA氏が運営する<br>オンラインショップ『想考舎』によるZINE。<br>
+                    N-16 アヤコさんも寄稿しています。<br>
+                    Zineのみ購入の場合は送料200円。<br>
+					<span class="important">CDと一緒にご注文で、送料無料！<br>数に限りがありますのでお早めに！</span>
+                  </span>
+                </div>
+                <div class="fieldset product_select">
+                  <span class="product_name"></span>
+                  <img src="images/grist_vol2_b.jpg" class="product_image" alt="">
+                  <span class="price">【寄稿者】</span>
+                  <span class="product_discription">
+					Takeshi Evolstak (NŌ) / ayako (N-16,Super Skeletons)<br>
+					イトウ ヨウイチ (veggie食堂 船出屋) / K.K (衝撃)<br>
+					イライザ・ロイヤル (イライザ・ロイヤル&ザ・総括リンチ) / こうぞう<br>
+					Nae (Bronze Fist Records)<br>
+					Yuichirou Hachiman (Sow Threat)<br>
+					TOMO-NI (C.R.A.C. Nagoya) / Rumi<br>
+					YOSUKE HIRATA / Shutopia (Nu-CA)<br>
+				  </span>
                 </div><br clear="all">
                 <div class="fieldset product_select">
                   <span class="product_name">SWEET SCUM SCRAMBLE / V.A</span>
@@ -149,10 +176,27 @@
 					N-16 は『Go for it!』『HEART BREAK WATER HOTEL』の2曲参加しております。<br>
 					<span class="important">枚数に限りがありますのでお早めに！</span></span>
                 </div><br clear="all">
+				<br clear="all">
+				<iframe src="https://ws.formzu.net/fgen/S20517205/" style="height: 1100px; max-width: 620px; width: 100%; border: 0;" onload="if (navigator.userAgent.match(/iPhone|iPad|Macintosh/) !== null && formzuInitialLoad == true) this.scrollIntoView(true)"></iframe>
+				<script>
+				if (window.addEventListener) {
+				   window.addEventListener( 'load', formzuInitialSetting, false );
+				}
+				else if (window.attachEvent) {
+				   window.attachEvent( 'onload', formzuInitialSetting );
+				}
+				else {
+				   window.onload = formzuInitialSetting;
+				}
+				function formzuInitialSetting() {
+				   formzuInitialLoad = true;
+				}
+				</script>
+<!--
 				<div class="fieldset">
 					<label for="order_item">Order</label>
 					<select name="order_item" id="order_item" required="required">
-					<option value="" data-price="0"></option>
+					<option value="None" id="order0" data-price="0" data-toggle="order_item2" data-toggle-hide="1"  data-toggle-value="1">None</option>
 					<option value="sweet 16 diamond summit / &yen;2,100" id="order1" data-price="2100">sweet 16 diamond summit / &yen;2,100</option>
 					<option value="INHERIT / &yen;2,000" id="order2" data-price="2000">INHERIT / &yen;2,000</option>
 					<option value="N-16 1st+2nd Set / &yen;3,800" id="order3" data-price="3800">N-16 1st+2nd Set / &yen;3,800</option>
@@ -161,29 +205,35 @@
 					<option value="SWEET SCUM SCRAMBLE & INHERIT / &yen;3,080" id="order6" data-price="3080">富真面目コンピ & INHERIT / &yen;3,080</option>
 					<option value="SWEET SCUM SCRAMBLE & N-16 1st+2nd Set / &yen;4,880" id="order7" data-price="4880">富真面目コンピ & N-16 1st+2nd Set / &yen;4,880</option>
 					</select>
+					<div id="item_item2">
+					<label for="order_zine">Order</label>
+					<select name="order_zine" id="order_zine" required="required">
+					<option value="Grist Zine Vol.2 / &yen;300" data-price="300">Grist Zine Vol.2 / &yen;300</option>
+					</select>
 				</div>
-				  <div class="fieldset">
+				</div>
+				<div class="fieldset">
 					<label for="name">Name</label>
 					<input type="text" id="contact_name" class="form-text required name" required="required" name="contact_name" maxlength="255" data-value=""/>
-				  </div>
-				  <div class="fieldset">
+				</div>
+				<div class="fieldset">
 					<label for="email">Email</label>
 					<input type="email" id="email" class="form-text required email" required="required" name="email" maxlength="255" data-value=""/>
-				  </div>
-				  <div class="fieldset">
+				</div>
+				<div class="fieldset">
 					<label for="email">Email (確認)</label>
 					<input type="email" id="confirm_email" class="form-text required email" required="required" name="confirm_email" maxlength="255" data-value="" data-post-disable="1" />
-				  </div>
-				  <div class="fieldset">
+				</div>
+				<div class="fieldset">
 					<label for="message">Message</label>
 					<textarea name="contact_message" id="contact_message" rows="20" cols="40" data-value=""></textarea>
-				  </div>
-				  <div class="fieldset form-actions">
-				    <input type="submit" value="ご注文" />
-				  </div>
-			  </form><br clear="all">
+					</div>
+				<div class="fieldset form-actions">
+					<input type="submit" value="ご注文" />
+				</div>
 			  <script type="text/javascript" id="mfpjs" src="cgi-bin/mailformpro/mailformpro.cgi?type=shop" charset="UTF-8"></script>
-			  <div class="pagetop"><a href="#TOP" title="PageTop" target="_self">PageTop &gt&gt</a></div>
+-->
+		  <div class="pagetop"><a href="#TOP" title="PageTop" target="_self">PageTop &gt&gt</a></div>
           </div>
         </section>
         <section class="five columns">
